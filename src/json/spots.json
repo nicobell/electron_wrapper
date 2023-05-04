@@ -1,0 +1,166 @@
+{
+    "spots": [
+        {
+            "id": "porto_trieste",
+            "title": "Port of Trieste",
+            "x": 72,
+            "y": 81,
+            "icon": "maritime",
+            "radius": 2,
+            "stateto": "porto_trieste"
+        },
+        {
+            "id": "freeeste",
+            "title": "FreeEste",
+            "x": 77.4,
+            "y": 79.5,
+            "icon": "train",
+            "radius": 1.5,
+            "stateto": "interporto_freeeste"
+        },
+        {
+            "id": "interporto_trieste",
+            "title": "Trieste Inland Terminal",
+            "x": 76.3,
+            "y": 73.1,
+            "icon": "train",
+            "radius": 1.5,
+            "stateto": "interporto_freeeste"
+        },
+        {
+            "id": "interporto_gorizia",
+            "title": "Gorizia Inland Terminal SDAG",
+            "x": 70,
+            "y": 56.8,
+            "icon": "train",
+            "radius": 1.5,
+            "stateto": "interporto_gorizia"
+        },
+        {
+            "id": "porto_monfalcone",
+            "title": "Port of Monfalcone",
+            "x": 70.5,
+            "y": 70.5,
+            "icon": "maritime",
+            "radius": 1.5,
+            "stateto": "porto_monfalcone"
+        },
+        {
+            "id": "trieste_airport",
+            "title": "Trieste Airport",
+            "x": 68.5,
+            "y": 67.7,
+            "icon": "airport",
+            "radius": 1.5,
+            "stateto": ""
+        },
+        {
+            "id": "porto_nogaro",
+            "title": "Port Nogaro",
+            "x": 59.1,
+            "y": 70,
+            "icon": "maritime",
+            "radius": 1.5,
+            "stateto": "porto_nogaro"
+        },
+        {
+            "id": "interporto_cervignano",
+            "title": "Cervignano Inland Terminal",
+            "x": 61.2,
+            "y": 63.5,
+            "icon": "train",
+            "radius": 1.5,
+            "stateto": "interporto_cervignano"
+        },
+        {
+            "id": "interporto_pordenone",
+            "title": "Pordenone Inland Terminal",
+            "x": 49.4,
+            "y": 56.8,
+            "icon": "train",
+            "radius": 1.5,
+            "stateto": "interporto_pordenone"
+        },
+        {
+            "id": "porto_trieste_small",
+            "title": "Port of Trieste",
+            "x": 85,
+            "y": 65.7,
+            "icon": "maritime",
+            "radius": 0.5,
+            "stateto": "porto_trieste"
+        },
+        {
+            "id": "freeeste_small",
+            "title": "FreeEste",
+            "x": 88.2,
+            "y": 65.1,
+            "icon": "train",
+            "radius": 0.5,
+            "stateto": "interporto_freeeste"
+        },
+        {
+            "id": "interporto_trieste_small",
+            "title": "Trieste Inland Terminal",
+            "x": 87.5,
+            "y": 61,
+            "icon": "train",
+            "radius": 0.5,
+            "stateto": "interporto_freeeste"
+        },
+        {
+            "id": "interporto_gorizia_small",
+            "title": "Gorizia Inland Terminal SDAG",
+            "x": 83.4,
+            "y": 50.9,
+            "icon": "train",
+            "radius": 0.5,
+            "stateto": "interporto_gorizia"
+        },
+        {
+            "id": "porto_monfalcone_small",
+            "title": "Port of Monfalcone",
+            "x": 83.5,
+            "y": 59.5,
+            "icon": "maritime",
+            "radius": 0.5,
+            "stateto": "porto_monfalcone"
+        },
+        {
+            "id": "trieste_airport_small",
+            "title": "Trieste Airport",
+            "x": 82.8,
+            "y": 57.8,
+            "icon": "airport",
+            "radius": 0.5,
+            "stateto": ""
+        },
+        {
+            "id": "porto_nogaro_small",
+            "title": "Port Nogaro",
+            "x": 76.7,
+            "y": 59.4,
+            "icon": "maritime",
+            "radius": 0.5,
+            "stateto": "porto_nogaro"
+        },
+        {
+            "id": "interporto_cervignano_small",
+            "title": "Cervignano Inland Terminal",
+            "x": 78.1,
+            "y": 55.6,
+            "icon": "train",
+            "radius": 0.5,
+            "stateto": "interporto_cervignano"
+        },
+        {
+            "id": "interporto_pordenone_small",
+            "title": "Pordenone Inland Terminal",
+            "x": 71.2,
+            "y": 50.9,
+            "icon": "train",
+            "radius": 0.5,
+            "stateto": "interporto_pordenone"
+        }
+    ]
+}

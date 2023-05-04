@@ -1,0 +1,135 @@
+
+
+.labels div {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 8;
+    background-color: #fff;
+    /* max-width: 8vw; */
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.labels div.blue::before,
+.labels div.blue { 
+    background-color: var(--main_color); 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    transition: transform 500ms ease;
+}
+
+.labels div.topleft.blue,
+.labels div.topright.blue { 
+    transform: translateY(-.25vw);
+}
+.labels div.left.blue,
+.labels div.right.blue { 
+    transform: translateY(.25vw);
+}
+
+.labels div.hidden { display: none; }
+
+.labels div.blue:before,
+.labels div.white-arrow.blue .arrow { display: none; }
+
+.labels div.white-arrow.blue span {
+    text-transform: uppercase;
+    padding: .35vw 1vw;
+    font-weight: 700;
+    font-size: .8vw;
+}
+
+.labels div.transparent:not(.dark) { opacity: 0.5 !important; }
+
+/* labels with right leg */
+.labels div.right,
+.labels div.topright { flex-direction: row-reverse; }
+
+/* tooltip label */
+.labels div span {
+    display: block;
+    padding: .35vw;
+    font-size: .7vw;
+    font-weight: 400;
+    transform: all 500ms ease;
+}
+.labels div.blue span { 
+    color: #fff;
+    transform: all 500ms ease;
+}
+
+/* color and arrow if clickable */
+.labels div .arrow { display: none; }
+
+/* color section */
+.labels div.white-arrow .arrow {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 1vw;
+    min-width: 1vw;
+    max-width: 1vw;
+}
+
+/* white arrow icon */
+.labels div.white-arrow .arrow::after {
+    content: '';
+    background-color: #fff;
+    width: .5vw;
+    height: .5vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+/* label leg on left side bottom */
+.labels div.double::before,
+.labels div.double::after,
+.labels div::before {
+    content: '';
+    background-color: #fff;
+    width: .8vw;
+    height: .8vw;
+    position: absolute;
+    
+}
+.labels div.double::after,
+.labels div.left::before {
+    bottom: -.6vw;
+    left: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+.labels div.right::before {
+    bottom: -.6vw;
+    right: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+.labels div.topright::before {
+    top: -.6vw;
+    right: 0;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+.labels div.double::before,
+.labels div.topleft::before {
+    top: -.6vw;
+    left: 0;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+}
+  
+.labels div.white-arrow:hover { cursor: pointer; }
+  
+.labels div.dark {
+    background-color: #072734;
+    color: #fff;
+    font-weight: 500;
+}
+.labels div.dark::before { display: none; }

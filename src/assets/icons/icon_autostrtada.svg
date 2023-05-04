@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-icon_autostrtada">
+      <rect width="26" height="26"/>
+    </clipPath>
+  </defs>
+  <g id="icon_autostrtada" clip-path="url(#clip-icon_autostrtada)">
+    <path id="Tracciato_34775" data-name="Tracciato 34775" d="M189.413,135.7h1.271l.15,5.069h6.924l-3.359-14.1h-3.982l.053,1.784h-.841l.053-1.784H185.7l-3.359,14.1h6.923Zm.167-5.644h.936l.1,3.466h-1.141Z" transform="translate(-177.548 -120.22)" fill="#fff"/>
+  </g>
+</svg>

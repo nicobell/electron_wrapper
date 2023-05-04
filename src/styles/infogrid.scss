@@ -1,0 +1,278 @@
+
+.info-grid { 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    transform: translateX(-110%);
+    transition: transform ease 800ms;
+}
+
+.info-grid::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    background-image: url(../assets/sfumatura_dark_sx.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+}
+
+.info-grid.show {
+    transform: translateX(0);
+    transition: transform ease 800ms;
+}
+
+.info-grid .grid {
+    position: fixed;
+    z-index: 9;
+    top: 24%;
+    left: 0;
+    padding: 4vw 2vw 1vw 2vw;
+    width: 23vw;
+    height: fit-content;
+    background-color: var(--transparent_blue);
+    transition: background-color ease 500ms;
+}
+
+.info-grid.porti .grid,
+.info-grid .grid.no-title { padding: 2vw; }
+
+.info-grid .grid::after {
+    content: '';
+    background-color: var(--dark_blue);
+    width: 90%;
+    height: 1vw;
+    left: 0;
+    bottom: -1vw;
+    opacity: .15;
+    display: block;
+    position: absolute;
+}
+ 
+/* -------------------------------------------------------- */
+.info-grid .title-card {
+    padding: 1vw 3vw 1vw 1vw;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    width: fit-content;
+    top: 18%;
+    left: 2.5vw;
+    box-shadow: -.5vw .5vw 0 var(--dark_blue);
+}
+
+.info-grid.porti .title-card {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 2.2vw;
+    left: 0;
+    top: 0;
+    padding: 0 0 1vw 0;
+}
+
+.info-grid .title-card h2 {
+    margin: 0;
+    width: fit-content;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+.info-grid .title-card h3 {
+    color: var(--main_color);
+    font-weight: 700;
+    font-size: 1vw;
+    margin: 0;
+}
+
+.info-grid.porti .title-card * { 
+    color: #fff; 
+    font-weight: 700;
+}
+
+/* -------------------------------------------------------- */
+.table-entry {
+    display: flex;
+    flex-direction: row;
+    margin: .6vw 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.table-entry.subgrid {
+    display: grid;
+    grid-template-areas: 
+        'num labels'
+        'sub sub';
+}
+
+.info-grid.porti .table-entry:not(:last-child) {
+    border-bottom: 1px solid var(--main_color);
+}
+
+.table-entry:not(:last-child) {
+    border-bottom: 1px solid #999;
+    transition: border ease 500ms;
+    padding-bottom: .6vw;
+}
+
+/* -------------------------------------------------------- */
+.table-entry .labels {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.table-entry .label {
+    color: #ededed;
+    font-weight: 300;
+    font-size: 0.7vw;
+}
+
+.info-grid.porti .label {
+    font-size: .9vw;
+    color: #fff;
+}
+
+.info-grid.fvg .label {
+    font-size: 1.1vw;
+    color: #fff;
+}
+
+.table-entry .small-label {
+    color: var(--main_color);
+    font-size: 0.6vw;
+    margin-top: .25vw;
+}
+
+/* -------------------------------------------------------- */
+.table-entry .num {
+    color: #fff;
+    font-size: 1.8vw;
+    font-weight: 300;
+    text-align: left;
+    position: relative;
+}
+
+.info-grid.fvg .table-entry .num { font-size: 2.2vw; }
+
+.table-entry .num span {
+    position: absolute;
+    top: .25vw;
+    left: calc(100% + .5vw);
+    font-size: 1vw;
+    color: var(--main_color);
+}
+
+.info-grid:not(.porti) .table-entry .num { padding-left: 3vw; }
+.table-entry:not(.subgrid) .num { max-width: 45%; }
+
+.table-entry:not(.subgrid) .labels { max-width: 55%; }
+
+.info-grid:not(.porti) .table-entry .num:before {
+    content: '';
+    width: 2.2vw;
+    height: 2.2vw;
+    background-color: var(--dark_blue);
+    opacity: .5;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-grid:not(.porti) .table-entry .num:after {
+    content: '';
+    width: 2.2vw;
+    height: 2.2vw;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+}
+.table-entry .num.railway:after { background-image: url(../assets/icons/icon_railway.svg); }
+.table-entry .num.airport:after { background-image: url(../assets/icons/icon_airport.svg); }
+.table-entry .num.autostrada:after { background-image: url(../assets/icons/icon_autostrtada.svg); }
+.table-entry .num.country:after { background-image: url(../assets/icons/icon_country.svg); }
+.table-entry .num.ferry:after { background-image: url(../assets/icons/icon_ferry.svg); }
+.table-entry .num.maritime:after { background-image: url(../assets/icons/icon_maritime.svg); }
+.table-entry .num.teu:after { background-image: url(../assets/icons/icon_teu.svg); }
+.table-entry .num.tons:after { background-image: url(../assets/icons/icon_tons.svg); }
+.table-entry .num.train:after { background-image: url(../assets/icons/icon_train.svg); }
+.table-entry .num.vehicle:after { background-image: url(../assets/icons/icon_vehicle.svg); }
+
+/* -------------------------------------------------------- */
+.table-entry.subgrid > * { width: unset; }
+.table-entry.subgrid .labels {  grid-area: labels; }
+.table-entry.subgrid .num { grid-area: num; }
+.table-entry.subgrid .subdata { grid-area: sub; }
+
+.table-entry .subdata {
+    width: calc(100% - 2.5vw);
+    margin: .5vw 0 .5vw 2.5vw;
+    border-left: 1px solid #999;
+}
+
+.table-entry .subdata div {
+    color: #fff;
+    padding: .5vw 0 .5vw 1vw;
+    font-size: 0.75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.table-entry .subdata div:not(:last-child) {
+    border-bottom: 1px solid #999;
+}
+
+.table-entry .subdata div .sublabel { font-size: 0.75vw; }
+.table-entry .subdata div .subnum { font-size: 1vw; }
+
+
+/* -------------------------------------------------------- */
+.info-city {
+    position: fixed;
+    z-index: 10;
+    bottom: 1vw;
+    left: 0;
+    padding: 2vw 2vw 1vw 2vw;
+    background: var(--secondary_blue);
+    width: 23vw;
+    height: fit-content;
+    transform: translateX(-110%);
+    transition: transform ease 800ms;
+}
+
+.info-city.show {
+    transform: translateX(0);
+    transition: transform ease 800ms;
+}
+
+.info-city h2 {
+    margin: 0;
+    font-size: 2.8vw;
+    font-weight: 700;
+    color: #fff;
+}
+
+.info-city .small-label { color: #c7c7c7; }
+
+.info-city .table-entry:not(:last-child) { border-bottom: 1px solid #c7c7c7; }

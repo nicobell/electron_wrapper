@@ -1,0 +1,1384 @@
+{  
+  "tables": [
+    {
+      "id": "global",
+      "title": "Europe",
+      "subtitle": "Your Gateway to",
+      "data": [
+        {
+          "num": "14",
+          "label": "Direct Intercontinental Maritime Connections",
+          "icon": "maritime"
+        }, {
+          "num": "35",
+          "label": "Total Direct Maritime Connections",
+          "icon": "maritime"
+        }, {
+          "num": "31",
+          "label": "Direct Railway Connections to European Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "10.000",
+          "label": "Trains from/to European Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "330.000",
+          "label": "Intermodal Transport Unit (ITU) imported/exported",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }, {
+          "num": "860.000",
+          "label": "TEUs imported/exported",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "60.000.000",
+          "label": "Tons imported/exported",
+          "sublabel": "PER YEAR",
+          "icon": "tons"
+        }
+      ]
+    },
+    {
+      "id": "fvg",
+      "title": "",
+      "subtitle": "",
+      "data": [
+        {
+          "num": "3",
+          "label": "PORTS",
+          "icon": "maritime"
+        }, {
+          "num": "5",
+          "label": "INLAND TERMINALS",
+          "icon": "train"
+        }, {
+          "num": "1",
+          "label": "AIRPORT",
+          "icon": "airport"
+        }
+      ]
+    },
+    {
+      "id": "mediterranean",
+      "title": "East Mediterranean",
+      "subtitle": "Your Gateway to",
+      "data": [
+        {
+          "num": "24",
+          "label": "Direct Mediterranean Maritime Connections",
+          "icon": "maritime"
+        }, {
+          "num": "860.000",
+          "label": "TEUs imported/exported",
+          "sublabel": "PER YEAR",
+          "icon": "teu",
+          "subdata": [
+            {
+              "num": "373.000",
+              "label": "from/to Asian Ports"
+            }, {
+              "num": "143.000",
+              "label": "from/to Italian Ports"
+            }, {
+              "num": "344.000",
+              "label": "from/to other Mediterranean Ports"
+            }
+          ]
+        }, {
+          "num": "116",
+          "label": "Ro-Ro Ferries from/to Turkey",
+          "sublabel": "PER YEAR",
+          "icon": "ferry"
+        }, {
+          "num": "340.000",
+          "label": "Intermodal Transport Unit (ITU) imported/exported",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "europe",
+      "title": "Central Europe",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "31",
+          "label": "Direct Railway Connections to European Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "200",
+          "label": "Trains from/to European Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "10.000",
+          "label": "Trains from/to European Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "290.000",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "70.000",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "austria",
+      "title": "Austria",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "8",
+          "label": "Direct Railway Connections to Austrian Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "30",
+          "label": "Trains from/to Austria Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "1.600",
+          "label": "Trains from/to Austria Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "60.000",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "30.000",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "czech_rep",
+      "title": "Czech Republic",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "1",
+          "label": "Direct Railway Connections to Czech Republic Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "5",
+          "label": "Trains from/to Czech Republic Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "225",
+          "label": "Trains from/to Czech Republic Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "16.000",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "4.500",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "germany",
+      "title": "Germany",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "6",
+          "label": "Direct Railway Connections to Germany Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "65",
+          "label": "Trains from/to Germany Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "3.400",
+          "label": "Trains from/to Germany Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "80.000",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "48.000",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "holland",
+      "title": "Holland",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "1",
+          "label": "Direct Railway Connections to Holland Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "10",
+          "label": "Trains from/to Holland Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "520",
+          "label": "Trains from/to Holland Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "-",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "-",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "hungary",
+      "title": "Hungary",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "1",
+          "label": "Direct Railway Connections to Hungary Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "17",
+          "label": "Trains from/to Hungarian Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "840",
+          "label": "Trains from/to Hungarian Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "70.000",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "18.000",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "italy",
+      "title": "Italy",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "7",
+          "label": "Direct Railway Connections to Italian Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "34",
+          "label": "Trains from/to Italian Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "1.800",
+          "label": "Trains from/to Italian Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "32.000",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "15.000",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "luxemburg",
+      "title": "Luxemburg",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "1",
+          "label": "Direct Railway Connections to Luxemburg Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "11",
+          "label": "Trains from/to Luxemburg Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "544",
+          "label": "Trains from/to Luxemburg Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "170",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "8.600",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "poland",
+      "title": "Poland",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "1",
+          "label": "Direct Railway Connections to Poland Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "6",
+          "label": "Trains from/to Poland Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "312",
+          "label": "Trains from/to Poland Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "-",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "-",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "slovakia",
+      "title": "Slovakia",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "3",
+          "label": "Direct Railway Connections to Slovakia Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "9",
+          "label": "Trains from/to Slovakia Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "463",
+          "label": "Trains from/to Slovakia Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "33.000",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "9.300",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "slovenia",
+      "title": "Slovenia",
+      "subtitle": "Your Rail Gateway to",
+      "data": [
+        {
+          "num": "1",
+          "label": "Direct Railway Connections to Slovakia Inland Terminals",
+          "icon": "railway"
+        }, {
+          "num": "1",
+          "label": "Trains from/to Slovakia Inland Terminals",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "24",
+          "label": "Trains from/to Slovakia Inland Terminals",
+          "sublabel": "PER YEAR",
+          "icon": "train"
+        }, {
+          "num": "1.500",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "400",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "lambach",
+      "title": "Lambach",
+      "data": [
+        {
+          "num": "119",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "6.400",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "250",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "salzburg",
+      "title": "Salzburg",
+      "data": [
+        {
+          "num": "-",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "-",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "-",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "villach",
+      "title": "Villach",
+      "data": [
+        {
+          "num": "8",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "14.300",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "6",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "wels",
+      "title": "Wels",
+      "data": [
+        {
+          "num": "13",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "22.500",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "9.300",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "wolfurt",
+      "title": "Wolfurt",
+      "data": [
+        {
+          "num": "1",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "222",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "wien",
+      "title": "Wien",
+      "data": [
+        {
+          "num": "5",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "10.200",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "linz",
+      "title": "Linz",
+      "data": [
+        {
+          "num": "2",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "4.500",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "kapfenberg",
+      "title": "Kapfenberg",
+      "data": [
+        {
+          "num": "1",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "1.500",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "paskov",
+      "title": "Mošnov/Paskov",
+      "data": [
+        {
+          "num": "5",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "15.800",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "burghausen",
+      "title": "Burghausen",
+      "data": [
+        {
+          "num": "2",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "2.200",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "giengen",
+      "title": "Giengen",
+      "data": [
+        {
+          "num": "3",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "8.500",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "karlsruhe",
+      "title": "Karlsruhe",
+      "data": [
+        {
+          "num": "10",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "1.100",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "13.100",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "koln",
+      "title": "Köln",
+      "data": [
+        {
+          "num": "26",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "30.500",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "24.500",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "munchen",
+      "title": "München",
+      "data": [
+        {
+          "num": "13",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "36.300",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "100",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "duisburg",
+      "title": "Duisburg",
+      "data": [
+        {
+          "num": "14",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "1.000",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "1.200",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "rotterdam",
+      "title": "Rotterdam",
+      "data": [
+        {
+          "num": "10",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "-",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "-",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "budapest",
+      "title": "Budapest",
+      "data": [
+        {
+          "num": "17",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "68.500",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "jesi",
+      "title": "Jesi (Ancona)",
+      "data": [
+        {
+          "num": "1",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "2.200",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "manoppello",
+      "title": "Manoppello",
+      "data": [
+        {
+          "num": "1",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "1.100",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "milano",
+      "title": "Milano",
+      "data": [
+        {
+          "num": "6",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "12.300",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "padova",
+      "title": "Padova",
+      "data": [
+        {
+          "num": "7",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "15.800",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "laspezia",
+      "title": "La Spezia",
+      "data": [
+        {
+          "num": "12",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "-",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "-",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "genova",
+      "title": "Genova",
+      "data": [
+        {
+          "num": "4",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "-",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "-",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "livorno",
+      "title": "Livorno",
+      "data": [
+        {
+          "num": "4",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "-",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "-",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "bettembourg",
+      "title": "Bettembourg",
+      "data": [
+        {
+          "num": "11",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "170",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "15.900",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "gliwice",
+      "title": "Gliwice",
+      "data": [
+        {
+          "num": "6",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "-",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "-",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "bratislava",
+      "title": "Bratislava",
+      "data": [
+        {
+          "num": "2",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "7.100",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "dobra",
+      "title": "Dobrá",
+      "data": [
+        {
+          "num": "1",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "1.700",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "dunajskastreda",
+      "title": "Dunajskà Streda",
+      "data": [
+        {
+          "num": "7",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "23.600",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "velenje",
+      "title": "Velenje",
+      "data": [
+        {
+          "num": "1",
+          "label": "Trains from/to",
+          "sublabel": "PER WEEK",
+          "icon": "train"
+        }, {
+          "num": "1.400",
+          "label": "TEUs via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "teu"
+        }, {
+          "num": "0",
+          "label": "Intermodal Transport Unit (ITU) via Railway",
+          "sublabel": "PER YEAR",
+          "icon": "vehicle"
+        }
+      ]
+    },
+    {
+      "id": "porto_trieste",
+      "title": "Port of Trieste",
+      "data": [
+        {
+          "num": "2,300,000<span>sqm</span>",
+          "label": "Port areas",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "1,800,000<span>sqm</span>",
+          "label": "Free port areas",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "925,000<span>sqm</span>",
+          "label": "Storage areas",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "18<span>meters</span>",
+          "label": "Maximum draft",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "70<span>km</span>",
+          "label": "Internal rail network",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "12<span>km</span>",
+          "label": "Docks length",
+          "sublabel": "",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": "porto_monfalcone",
+      "title": "Port of Monfalcone",
+      "data": [
+        {
+          "num": "1,550,000<span>sqm</span>",
+          "label": "Port areas",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "800,000<span>sqm</span>",
+          "label": "Storage areas",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "80,000<span>sqm</span>",
+          "label": "Warehouses / Sheds",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "125,000<span>sqm</span>",
+          "label": "Car Terminal",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "1,910<span>meters</span>",
+          "label": "Quay length",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "10.9<span>meters</span>",
+          "label": "Maximum draft",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "12",
+          "label": "Number of berths",
+          "sublabel": "",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": "porto_nogaro",
+      "title": "Porto Nogaro",
+      "data": [
+        {
+          "num": "1",
+          "label": "Private Quay",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "7,000<span>tons</span>",
+          "label": "Maximum ships tonnage",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "860<span>m</span>",
+          "label": "Quay lenght",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "7,5<span>m</span>",
+          "label": "Maximum draft",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "+1,000,000<span>tons</span>",
+          "label": "General goods moved in 2022",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "7<span>miles</span>",
+          "label": "Navigable access channel",
+          "sublabel": "",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": "interporto_freeeste",
+      "title": "Trieste Inland Terminal and Freeste",
+      "data": [
+        {
+          "num": "486,000<span>sqm</span>",
+          "label": "Total Area",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "112,500<span>sqm</span>",
+          "label": "Covered warehouses",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "28,600<span>Teus</span>",
+          "label": "Goods handled",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "6,500",
+          "label": "Containers stripped/unstripped",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "650,000<span>tons</span>",
+          "label": "Goods handled",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "14,500<span>ITU</span>",
+          "label": "Vehicles loaded/discharged via train",
+          "sublabel": "",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": "interporto_cervignano",
+      "title": "Cervignano Inland Terminal ",
+      "data": [
+        {
+          "num": "460,000<span>sqm</span>",
+          "label": "Integrated system of logistics infrastructures",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "160,000<span>sqm</span>",
+          "label": "Intermodal terminal",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "6",
+          "label": "Tracks",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "750<span>meters</span>",
+          "label": "Tracks length",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "24,000<span>sqm</span>",
+          "label": "Warehouses, connected with 2 tracks of 550 meters",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "500,000<span>sqm</span>",
+          "label": "Possible expansion area",
+          "sublabel": "",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": "interporto_gorizia",
+      "title": "Gorizia Inland Terminal SDAG",
+      "data": [
+        {
+          "num": "600,000<span>sqm</span>",
+          "label": "Total area",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "550",
+          "label": "Truck parking slots",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "6,000<span>sqm</span>",
+          "label": "Food logistic area",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "20,000<span>sqm</span>",
+          "label": "Intermodal terminal area",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "30,000<span>sqm</span>",
+          "label": "Logistic warehouses",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "11",
+          "label": "Refrigeration warehouses",
+          "sublabel": "",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": "interporto_pordenone",
+      "title": "Pordenone Inland Terminal",
+      "data": [
+        {
+          "num": "800,000<span>sqm</span>",
+          "label": "Total area",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "140,000<span>sqm</span>",
+          "label": "Intermodal terminal area",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "10,000<span>sqm</span>",
+          "label": "Park TIR",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "30,000<span>sqm</span>",
+          "label": "Logistic warehouses",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "3,200<span>sqm</span>",
+          "label": "Customs offices",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "2,500<span>sqm</span>",
+          "label": "Civil motorization offices",
+          "sublabel": "",
+          "icon": ""
+        }, {
+          "num": "100,500<span>sqm</span>",
+          "label": "Transport, shipping and wholesale trade warehouses",
+          "sublabel": "",
+          "icon": ""
+        }
+      ]
+    }
+  ]
+}

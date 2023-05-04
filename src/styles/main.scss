@@ -1,0 +1,35 @@
+
+@import "./labels.scss";
+@import "./infogrid.scss";
+@import "./lines.scss";
+@import "./buttons.scss";
+@import "./spots.scss";
+@import "./videomap.scss";
+
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"), url(../assets/fonts/HelveticaLTStd-Light.otf) format("opentype");
+}
+
+:root {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: Helvetica;
+  --main_color: #1E83D6;
+  --dark_blue: #1E85D9;
+  --transparent_blue: rgba(30, 133, 217, .3);
+  --less_transparent_blue: rgba(30, 133, 217, .6);
+  --secondary_blue: #0469BB;
+  --main_transparent: #1e83d650;
+  --light_gray: #E2E5E6;
+  --dark_grey: #445E6A;
+}
+
+body { margin: 0; }
+
+.map-wrapper { pointer-events: none; }
+.map-wrapper.clickable { pointer-events: all; }
+
+
+

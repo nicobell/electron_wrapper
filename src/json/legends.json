@@ -1,0 +1,89 @@
+{
+    "legends": {
+        "ditc": {
+            "label": "Direct Inland <br> Terminal Connections",
+            "color": "#ffffff",
+            "symbol": "square"
+        },
+        "dimc": {
+            "label": "Direct Intercontinental <br> Maritime Connections",
+            "color": "#D65C4E",
+            "symbol": "square"
+        },
+        "roro": {
+            "label": "Ro-ro <br> Connections",
+            "color": "#9AF2E3",
+            "symbol": "square"
+        },
+        "feeder": {
+            "label": "Feeder <br> Connections",
+            "color": "#BDD61E",
+            "symbol": "square"
+        },
+        "dmmc": {
+            "label": "Direct Mediterranean <br> Maritime Connections",
+            "color": "#A2A2A2",
+            "symbol": "square"
+        },
+        "train16plus": {
+            "label": "17 + <br> Trains per week",
+            "color": "#E6B000",
+            "symbol": "thick-rect"
+        },
+        "train816": {
+            "label": "9 - 16 <br> Trains per week",
+            "color": "#F5E347",
+            "symbol": "rect"
+        },
+        "train08": {
+            "label": "0 - 8 <br> Trains per week",
+            "color": "#FDFFD2",
+            "symbol": "thin-rect"
+        },
+        "ditcc": {
+            "label": "Direct Inland <br> Terminal Connections",
+            "color": "#ffffff",
+            "symbol": "circle"
+        },
+        "rwnv": {
+            "label": "Routes with <br> no Vehicles",
+            "color": "#ffffff",
+            "symbol": "rect"
+        },
+        "rwv": {
+            "label": "Routes with <br> Vehicles",
+            "color": "#ffffff",
+            "symbol": "dotted-rect"
+        },
+        "oc": {
+            "label": "Other <br> Connections",
+            "color": "#275164",
+            "symbol": "circle"
+        },
+        "rc": {
+            "label": "Railway <br> Connections",
+            "color": "#ffffff",
+            "symbol": "thin-rect"
+        },
+        "hc": {
+            "label": "Highway <br> Connections",
+            "color": "#ffffff",
+            "symbol": "dotted-rect-thin"
+        },
+        "bac": {
+            "label": "Baltic Adriatic <br> Corridor",
+            "color": "#ffe71a",
+            "symbol": "thin-rect"
+        },
+        "mc": {
+            "label": "Mediterranean <br> Corridor",
+            "color": "#6b9bd2",
+            "symbol": "thin-rect"
+        },
+        "lh": {
+            "label": "Logistic <br> Hubs",
+            "color": "#1E83D6",
+            "symbol": "logistic-hub"
+        }
+    }
+}

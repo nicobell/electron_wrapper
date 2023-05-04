@@ -1,0 +1,120 @@
+
+.button-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.button-wrapper::before {
+    position: absolute;
+    content: '';    
+    width: 6vw;
+    height: 4vw;
+    background-color: var(--light_gray);
+    left: -5vw;
+    bottom: 0;
+    z-index: -1;
+    clip-path: polygon(100% 0%, 50% 0%, 0% 100%, 100% 100%)
+}
+.button-wrapper::after {
+    position: absolute;
+    content: '';    
+    width: 6vw;
+    height: 4vw;
+    background-color: var(--light_gray);
+    right: -5vw;
+    z-index: -1;
+    bottom: 0;
+    clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%)
+}
+  
+.button-wrapper button {
+    background-color: var(--light_gray);
+    color: var(--dark_gray);
+    font-weight: 700;
+    font-size: 0.6vw;
+    padding: 1vw .25vw;
+    border: none;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 4vw;
+    width: 8vw;
+}
+.button-wrapper button:hover { cursor: pointer; }
+  
+.button-wrapper button span {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.button-wrapper button.active {
+    background-color: #fff;
+    font-size: 0.75vw;
+    color: var(--main_color);
+    height: 5vw;
+    border-bottom: .4em solid var(--main_color);
+    border-top-left-radius: .25vw;
+    border-top-right-radius: .25vw;
+}
+
+/* .button-wrapper button.fvg.active {
+    padding-bottom: .5vw;
+} */
+
+.button-wrapper button.backbutton {
+    background-color: var(--main_color);
+    background-image: url(../assets/back.png);
+    background-repeat: no-repeat;
+    background-position: center 33%;
+    background-size: 1.5vw 1.5vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+    color: #fff;
+    height: 6vw;
+    border-bottom: none;
+    border-top-left-radius: .25vw;
+    border-top-right-radius: .25vw;
+    padding-bottom: 1.5vw;
+}
+.button-wrapper button.backbutton::before { display: none; }
+
+.button-wrapper button::before {
+    content: '';
+    background-color: var(--light_gray);
+    background-image: url(../assets/navbar/nav_icon_global.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 3.5vw;
+    height: 3.5vw;
+    position: absolute;
+    top: -1.25vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    border-radius: 50%;
+}
+.button-wrapper button.active::before {
+    background-color: #fff;
+    width: 4.25vw;
+    height: 4.25vw;
+    top: -1.5vw;
+}
+
+.button-wrapper button.global::before { background-image: url(../assets/navbar/nav_icon_global_gray.svg); }
+.button-wrapper button.medit::before { background-image: url(../assets/navbar/nav_icon_mediterranean_gray.svg); }
+.button-wrapper button.eu::before { background-image: url(../assets/navbar/nav_icon_europe_gray.svg); }
+.button-wrapper button.fvg::before { background-image: url(../assets/navbar/nav_icon_fvg_gray.svg); }
+
+.button-wrapper button.global.active::before { background-image: url(../assets/navbar/nav_icon_global.svg); }
+.button-wrapper button.medit.active::before { background-image: url(../assets/navbar/nav_icon_mediterranean.svg); }
+.button-wrapper button.eu.active::before { background-image: url(../assets/navbar/nav_icon_europe.svg); }
+.button-wrapper button.fvg.active::before { background-image: url(../assets/navbar/nav_icon_fvg.svg); }

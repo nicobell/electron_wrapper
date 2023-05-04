@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-icon_vehicle">
+      <rect width="26" height="26"/>
+    </clipPath>
+  </defs>
+  <g id="icon_vehicle" clip-path="url(#clip-icon_vehicle)">
+    <g id="noun-truck-trailer-695979" transform="translate(2.063 7.116)">
+      <path id="Tracciato_32237" data-name="Tracciato 32237" d="M157.633,374.747a2.209,2.209,0,1,1,2.209,2.209A2.209,2.209,0,0,1,157.633,374.747Zm3.156,0a.947.947,0,1,0-.947.947A.947.947,0,0,0,160.789,374.747Zm-12.309,0a2.209,2.209,0,1,1,2.209,2.209A2.209,2.209,0,0,1,148.48,374.747Zm3.156,0a.947.947,0,1,0-.947.947A.947.947,0,0,0,151.636,374.747Z" transform="translate(-142.794 -363.388)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Tracciato_32238" data-name="Tracciato 32238" d="M4.786,73.494H17.651l.925,1.619a.32.32,0,0,0,.435.118l.544-.311a.317.317,0,0,0,.12-.434l-.567-.992h1.124a.632.632,0,0,0,.633-.632V65.587a.633.633,0,0,0-.633-.633H2.2a.633.633,0,0,0-.633.633V71.28H.308a.316.316,0,0,0-.317.319v.627a.317.317,0,0,0,.317.319H1.572v.316a.632.632,0,0,0,.633.633H3.329l-.567.992a.32.32,0,0,0,.12.434l.544.311a.317.317,0,0,0,.435-.118Z" transform="translate(0.009 -64.979)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

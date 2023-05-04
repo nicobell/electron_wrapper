@@ -1,0 +1,60 @@
+
+/* linee di collegamento */
+.st1 { fill: none; }
+
+
+.linea path { fill: none; }
+
+.medium_spot { fill: #f5e347; }
+.medium_line {
+  stroke: #f5e347;
+  stroke-dasharray: 0 0 .74 .27;
+  stroke-width: .04vw;
+}
+.medium_line_full {
+  stroke: #f5e347;
+  stroke-width: .04vw;
+}
+
+.big_spot { fill: #e6b000; }
+.big_line {
+  stroke-dasharray: 0 0 1.13 .41;
+  stroke: #e6b000;
+  stroke-linejoin: round;
+  stroke-width: .06vw;
+}
+
+.small_spot { fill: #fdffd2; }
+.small_line {
+  stroke: #fdffd2;
+  stroke-width: 0.02vw;
+  stroke-dasharray: 0 0 .62 .41;
+}
+.small_line_full {
+  stroke: #fdffd2;
+  stroke-width: 0.02vw;
+}
+
+.thin_spot { fill: #ffffff; }
+.thin_line {
+  stroke: #ffffff;
+  stroke-width: 0.01vw;
+}
+
+
+.other_conn_spot {
+  stroke-dasharray: 0 0 0 .41;
+  stroke-width: .01vw;
+  stroke: #072734;
+  stroke-linecap: round;
+}
+.other_conn_inner { 
+  fill: #8ea6b1; 
+}
+
+.other_conn_line {
+  stroke: #043348;
+  stroke-width: .03vw;
+}
+
+.linea mask path { stroke: #fff; }

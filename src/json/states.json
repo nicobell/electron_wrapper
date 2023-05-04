@@ -1,0 +1,1038 @@
+{
+  "states": [
+    {
+      "id": "menu_global",
+      "parent": "",
+      "title": "Global",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shangai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "menu_mediterranean",
+      "parent": "",
+      "title": "Mediterranean",
+      "zoom": 7,
+      "x": 80,
+      "y": -50,
+      "type": "zoom-europe",
+      "highlights": [],
+      "lines": ["fvg_blue", "small_eu_white_line", "big_red_line", "roro_connections_line", "feeder_connections_line", "dmm_lines", "big_eu_white_line"],
+      "labels": ["roro_connections", "dmm_connections", "feeder_connections"],
+      "table": "mediterranean",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "menu_europe",
+      "parent": "",
+      "title": "Central Europe",
+      "zoom": 6,
+      "x": 300,
+      "y": 250,
+      "type": "zoom-europe",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "small_eu_white_line", "big_eu_white_line"],
+      "labels": ["italy", "luxemburg", "germany", "czech_rep", "austria", "slovakia", "slovenia", "hungary", "holland", "poland"],
+      "table": "europe",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "menu_fvg",
+      "parent": "",
+      "title": "Friuli Venezia Giulia",
+      "zoom": 74,
+      "x": 1800,
+      "y": 2200,
+      "type": "zoom-fvg",
+      "highlights": ["fvg_white"],
+      "lines": ["fvg_blue", "green_fvg_line", "blue_fvg_line"],
+      "labels": [
+        "porto_trieste", "interporto_trieste", "freeeste", "interporto_freeeste", "interporto_gorizia", "porto_monfalcone",
+        "trieste_airport", "porto_nogaro", "interporto_cervignano", "interporto_pordenone"
+      ],
+      "table": "fvg",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "feeder_connections",
+      "parent": "menu_mediterranean",
+      "title": "Feeder Connections",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": [],
+      "lines": ["fvg_blue", "feeder_connections_line"],
+      "labels": ["venezia", "ravenna", "ancona"],
+      "table": "mediterranean",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "dmm_connections",
+      "parent": "menu_mediterranean",
+      "title": "Direct Mediterranean Meritime Connections",
+      "zoom": 7,
+      "x": 80,
+      "y": -150,
+      "type": "zoom-country",
+      "highlights": [],
+      "lines": ["fvg_blue", "dmm_lines", "grey_spots"],
+      "labels": [
+        "venezia_dmm", "ravenna_dmm", "ancona_dmm", "rjeka", "gioia_tauro", "malta", "piraeus", "tekirdag", "gebze", "derince", "gemlik", 
+        "aliaga", "izmir", "limassol", "iskenderun", "beirut", "haifa", "ashdod", "portsaid_dmm", "damietta", "alexandria"
+      ],
+      "table": "mediterranean",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "roro_connections",
+      "parent": "menu_mediterranean",
+      "title": "Ro-ro Connections",
+      "zoom": 7,
+      "x": -20,
+      "y": -50,
+      "type": "zoom-country",
+      "highlights": [],
+      "lines": ["fvg_blue", "roro_connections_line"],
+      "labels": ["istanbul", "cesme", "mersin"],
+      "table": "mediterranean",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "germany",
+      "parent": "menu_europe",
+      "title": "Germany",
+      "zoom": 10,
+      "x": 450,
+      "y": 650,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "est"],
+      "lines": ["fvg_blue", "germany_lines"],
+      "labels": [
+        "duisburg", "koln", "burghausen", "munchen", "giengen", "karlsruhe",
+        "hamburg", "kiel", "berlin", "leipzig", "kuanas"
+      ],
+      "table": "germany",
+      "focus": {
+        "country": "deu",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "luxemburg",
+      "parent": "menu_europe",
+      "title": "Luxemburg",
+      "zoom": 12,
+      "x": 650,
+      "y": 570,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "bel"],
+      "lines": ["fvg_blue", "luxemburg_lines"],
+      "labels": ["zeebrugge", "bettembourg"],
+      "table": "luxemburg",
+      "focus": {
+        "country": "lux",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "holland",
+      "parent": "menu_europe",
+      "title": "Holland",
+      "zoom": 10,
+      "x": 630,
+      "y": 600,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "holland_lines"],
+      "labels": ["rotterdam"],
+      "table": "holland",
+      "focus": {
+        "country": "hol",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "czech_rep",
+      "parent": "menu_europe",
+      "title": "Czech Republic",
+      "zoom": 11,
+      "x": 300,
+      "y": 550,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "czech_lines"],
+      "labels": ["paskov"],
+      "table": "czech_rep",
+      "focus": {
+        "country": "cze",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "poland",
+      "parent": "menu_europe",
+      "title": "Poland",
+      "zoom": 9,
+      "x": 200,
+      "y": 550,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "poland_lines"],
+      "labels": ["gliwice"],
+      "table": "poland",
+      "focus": {
+        "country": "pol",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "slovakia",
+      "parent": "menu_europe",
+      "title": "Slovakia",
+      "zoom": 11,
+      "x": 200,
+      "y": 500,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "slovakia_lines"],
+      "labels": ["bratislava", "dobra", "dunajskastreda"],
+      "table": "slovakia",
+      "focus": {
+        "country": "svk",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "hungary",
+      "parent": "menu_europe",
+      "title": "Hungary",
+      "zoom": 11,
+      "x": 200,
+      "y": 400,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "hungary_lines"],
+      "labels": ["budapest"],
+      "table": "hungary",
+      "focus": {
+        "country": "hun",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "slovenia",
+      "parent": "menu_europe",
+      "title": "Slovenia",
+      "zoom": 12,
+      "x": 300,
+      "y": 350,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "slovenia_lines"],
+      "labels": ["velenje"],
+      "table": "slovenia",
+      "focus": {
+        "country": "svn",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "austria",
+      "parent": "menu_europe",
+      "title": "Austria",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "italy",
+      "parent": "menu_europe",
+      "title": "Italy",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "italy_lines"],
+      "labels": ["milano", "padova", "genova", "laspezia", "livorno", "manoppello", "jesi"],
+      "table": "italy",
+      "focus": {
+        "country": "ita",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "porto_trieste",
+      "parent": "menu_fvg",
+      "title": "Port of Trieste",
+      "videosrc": ["trieste"],
+      "zoom": 45,
+      "x": 1500,
+      "y": 1300,
+      "type": "video-layer",
+      "highlights": ["fvg_transparent"],
+      "lines": ["fvg_blue"],
+      "labels": [
+        "porto_trieste_small", "interporto_trieste_small", "freeeste_small", "interporto_gorizia_small", "porto_monfalcone_small",
+        "trieste_airport_small", "porto_nogaro_small", "interporto_cervignano_small", "interporto_pordenone_small"
+      ],
+      "table": "porto_trieste",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "interporto_freeeste",
+      "parent": "menu_fvg",
+      "title": "Trieste Inland Terminal and Freeste",
+      "videosrc": ["trieste"],
+      "zoom": 45,
+      "x": 1500,
+      "y": 1300,
+      "type": "video-layer",
+      "highlights": ["fvg_transparent"],
+      "lines": ["fvg_blue"],
+      "labels": [
+        "porto_trieste_small", "interporto_trieste_small", "freeeste_small", "interporto_gorizia_small", "porto_monfalcone_small",
+        "trieste_airport_small", "porto_nogaro_small", "interporto_cervignano_small", "interporto_pordenone_small"
+      ],
+      "table": "interporto_freeeste",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "interporto_pordenone",
+      "parent": "menu_fvg",
+      "title": "Pordenone Inland Terminal",
+      "videosrc": ["beach_1080"],
+      "zoom": 45,
+      "x": 1500,
+      "y": 1300,
+      "type": "video-layer",
+      "highlights": ["fvg_transparent"],
+      "lines": ["fvg_blue"],
+      "labels": [
+        "porto_trieste_small", "interporto_trieste_small", "freeeste_small", "interporto_gorizia_small", "porto_monfalcone_small",
+        "trieste_airport_small", "porto_nogaro_small", "interporto_cervignano_small", "interporto_pordenone_small"
+      ],
+      "table": "interporto_pordenone",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "porto_monfalcone",
+      "parent": "menu_fvg",
+      "title": "Port of Monfalcone",
+      "videosrc": ["trieste"],
+      "zoom": 45,
+      "x": 1500,
+      "y": 1300,
+      "type": "video-layer",
+      "highlights": ["fvg_transparent"],
+      "lines": ["fvg_blue"],
+      "labels": [
+        "porto_trieste_small", "interporto_trieste_small", "freeeste_small", "interporto_gorizia_small", "porto_monfalcone_small",
+        "trieste_airport_small", "porto_nogaro_small", "interporto_cervignano_small", "interporto_pordenone_small"
+      ],
+      "table": "porto_monfalcone",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "porto_nogaro",
+      "parent": "menu_fvg",
+      "title": "Port Nogaro",
+      "videosrc": ["Nogaro-1_29FPS", "Nogaro-1_59FPS", "Nogaro-2_29FPS", "Nogaro-3_59FPS", "Nogaro-4_29FPS"],
+      "zoom": 45,
+      "x": 1500,
+      "y": 1300,
+      "type": "video-layer",
+      "highlights": ["fvg_transparent"],
+      "lines": ["fvg_blue"],
+      "labels": [
+        "porto_trieste_small", "interporto_trieste_small", "freeeste_small", "interporto_gorizia_small", "porto_monfalcone_small",
+        "trieste_airport_small", "porto_nogaro_small", "interporto_cervignano_small", "interporto_pordenone_small"
+      ],
+      "table": "porto_nogaro",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "interporto_cervignano",
+      "parent": "menu_fvg",
+      "title": "Cervignano Inland Terminal",
+      "videosrc": ["trieste"],
+      "zoom": 45,
+      "x": 1500,
+      "y": 1300,
+      "type": "video-layer",
+      "highlights": ["fvg_transparent"],
+      "lines": ["fvg_blue"],
+      "labels": [
+        "porto_trieste_small", "interporto_trieste_small", "freeeste_small", "interporto_gorizia_small", "porto_monfalcone_small",
+        "trieste_airport_small", "porto_nogaro_small", "interporto_cervignano_small", "interporto_pordenone_small"
+      ],
+      "table": "interporto_cervignano",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "interporto_gorizia",
+      "parent": "menu_fvg",
+      "title": "Gorizia Inland Terminal SDAG",
+      "videosrc": ["trieste", "macchu", "london_bridge"],
+      "zoom": 45,
+      "x": 1500,
+      "y": 1300,
+      "type": "video-layer",
+      "highlights": ["fvg_transparent"],
+      "lines": ["fvg_blue"],
+      "labels": [
+        "porto_trieste_small", "interporto_trieste_small", "freeeste_small", "interporto_gorizia_small", "porto_monfalcone_small",
+        "trieste_airport_small", "porto_nogaro_small", "interporto_cervignano_small", "interporto_pordenone_small"
+      ],
+      "table": "interporto_gorizia",
+      "focus": {
+        "country": "",
+        "city": "",
+        "table": ""
+      }
+    },
+    {
+      "id": "lambach",
+      "parent": "austria",
+      "title": "Lambach",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "lambach",
+        "table": "lambach"
+      }
+    },
+    {
+      "id": "salzburg",
+      "parent": "austria",
+      "title": "Salzburg",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "salzburg",
+        "table": "salzburg"
+      }
+    },
+    {
+      "id": "villach",
+      "parent": "austria",
+      "title": "Villach",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "villach",
+        "table": "villach"
+      }
+    },
+    {
+      "id": "wels",
+      "parent": "austria",
+      "title": "Wels",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "wels",
+        "table": "wels"
+      }
+    },
+    {
+      "id": "wolfurt",
+      "parent": "austria",
+      "title": "Wolfurt",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "wolfurt",
+        "table": "wolfurt"
+      }
+    },
+    {
+      "id": "wien",
+      "parent": "austria",
+      "title": "Wien",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "wien",
+        "table": "wien"
+      }
+    },
+    {
+      "id": "linz",
+      "parent": "austria",
+      "title": "Linz",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "linz",
+        "table": "linz"
+      }
+    },
+    {
+      "id": "kapfenberg",
+      "parent": "austria",
+      "title": "Kapfenberg",
+      "zoom": 12,
+      "x": 300,
+      "y": 450,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "austria_lines"],
+      "labels": ["wolfurt", "salzburg", "lambach", "wels", "linz", "wien", "villach", "kapfenberg"],
+      "table": "austria",
+      "focus": {
+        "country": "aut",
+        "city": "kapfenberg",
+        "table": "kapfenberg"
+      }
+    },
+    {
+      "id": "burghausen",
+      "parent": "germany",
+      "title": "Burghausen",
+      "zoom": 10,
+      "x": 450,
+      "y": 650,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "est"],
+      "lines": ["fvg_blue", "germany_lines"],
+      "labels": [
+        "duisburg", "koln", "burghausen", "munchen", "giengen", "karlsruhe",
+        "hamburg", "kiel", "berlin", "leipzig", "kuanas"
+      ],
+      "table": "germany",
+      "focus": {
+        "country": "deu",
+        "city": "burghausen",
+        "table": "burghausen"
+      }
+    },
+    {
+      "id": "giengen",
+      "parent": "germany",
+      "title": "Giengen",
+      "zoom": 10,
+      "x": 450,
+      "y": 650,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "est"],
+      "lines": ["fvg_blue", "germany_lines"],
+      "labels": [
+        "duisburg", "koln", "burghausen", "munchen", "giengen", "karlsruhe",
+        "hamburg", "kiel", "berlin", "leipzig", "kuanas"
+      ],
+      "table": "germany",
+      "focus": {
+        "country": "deu",
+        "city": "giengen",
+        "table": "giengen"
+      }
+    },
+    {
+      "id": "karlsruhe",
+      "parent": "germany",
+      "title": "karlsruhe",
+      "zoom": 10,
+      "x": 450,
+      "y": 650,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "est"],
+      "lines": ["fvg_blue", "germany_lines"],
+      "labels": [
+        "duisburg", "koln", "burghausen", "munchen", "giengen", "karlsruhe",
+        "hamburg", "kiel", "berlin", "leipzig", "kuanas"
+      ],
+      "table": "germany",
+      "focus": {
+        "country": "deu",
+        "city": "karlsruhe",
+        "table": "karlsruhe"
+      }
+    },
+    {
+      "id": "koln",
+      "parent": "germany",
+      "title": "Koln",
+      "zoom": 10,
+      "x": 450,
+      "y": 650,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "est"],
+      "lines": ["fvg_blue", "germany_lines"],
+      "labels": [
+        "duisburg", "koln", "burghausen", "munchen", "giengen", "karlsruhe",
+        "hamburg", "kiel", "berlin", "leipzig", "kuanas"
+      ],
+      "table": "germany",
+      "focus": {
+        "country": "deu",
+        "city": "koln",
+        "table": "koln"
+      }
+    },
+    {
+      "id": "munchen",
+      "parent": "germany",
+      "title": "Munchen",
+      "zoom": 10,
+      "x": 450,
+      "y": 650,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "est"],
+      "lines": ["fvg_blue", "germany_lines"],
+      "labels": [
+        "duisburg", "koln", "burghausen", "munchen", "giengen", "karlsruhe",
+        "hamburg", "kiel", "berlin", "leipzig", "kuanas"
+      ],
+      "table": "germany",
+      "focus": {
+        "country": "deu",
+        "city": "munchen",
+        "table": "munchen"
+      }
+    },
+    {
+      "id": "duisburg",
+      "parent": "germany",
+      "title": "Duisburg",
+      "zoom": 10,
+      "x": 450,
+      "y": 650,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "est"],
+      "lines": ["fvg_blue", "germany_lines"],
+      "labels": [
+        "duisburg", "koln", "burghausen", "munchen", "giengen", "karlsruhe",
+        "hamburg", "kiel", "berlin", "leipzig", "kuanas"
+      ],
+      "table": "germany",
+      "focus": {
+        "country": "deu",
+        "city": "duisburg",
+        "table": "duisburg"
+      }
+    },
+    {
+      "id": "rotterdam",
+      "parent": "holland",
+      "title": "Rotterdam",
+      "zoom": 10,
+      "x": 630,
+      "y": 600,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "holland_lines"],
+      "labels": ["rotterdam"],
+      "table": "holland",
+      "focus": {
+        "country": "hol",
+        "city": "rotterdam",
+        "table": "rotterdam"
+      }
+    },
+    {
+      "id": "bettembourg",
+      "parent": "luxemburg",
+      "title": "Bettembourg",
+      "zoom": 12,
+      "x": 650,
+      "y": 570,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol", "bel"],
+      "lines": ["fvg_blue", "luxemburg_lines"],
+      "labels": ["zeebrugge", "bettembourg"],
+      "table": "luxemburg",
+      "focus": {
+        "country": "lux",
+        "city": "bettembourg",
+        "table": "bettembourg"
+      }
+    },
+    {
+      "id": "budapest",
+      "parent": "hungary",
+      "title": "Budapest",
+      "zoom": 11,
+      "x": 200,
+      "y": 400,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "hungary_lines"],
+      "labels": ["budapest"],
+      "table": "hungary",
+      "focus": {
+        "country": "hun",
+        "city": "budapest",
+        "table": "budapest"
+      }
+    },
+    {
+      "id": "jesi",
+      "parent": "italy",
+      "title": "Jesi",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "italy_lines"],
+      "labels": ["milano", "padova", "genova", "laspezia", "livorno", "manoppello", "jesi"],
+      "table": "italy",
+      "focus": {
+        "country": "ita",
+        "city": "jesi",
+        "table": "jesi"
+      }
+    },
+    {
+      "id": "manoppello",
+      "parent": "italy",
+      "title": "Manoppello",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "italy_lines"],
+      "labels": ["milano", "padova", "genova", "laspezia", "livorno", "manoppello", "jesi"],
+      "table": "italy",
+      "focus": {
+        "country": "ita",
+        "city": "manoppello",
+        "table": "manoppello"
+      }
+    },
+    {
+      "id": "padova",
+      "parent": "italy",
+      "title": "Padova",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "italy_lines"],
+      "labels": ["milano", "padova", "genova", "laspezia", "livorno", "manoppello", "jesi"],
+      "table": "italy",
+      "focus": {
+        "country": "ita",
+        "city": "padova",
+        "table": "padova"
+      }
+    },
+    {
+      "id": "milano",
+      "parent": "italy",
+      "title": "Milano",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "italy_lines"],
+      "labels": ["milano", "padova", "genova", "laspezia", "livorno", "manoppello", "jesi"],
+      "table": "italy",
+      "focus": {
+        "country": "ita",
+        "city": "milano",
+        "table": "milano"
+      }
+    },
+    {
+      "id": "genova",
+      "parent": "italy",
+      "title": "Genova",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "italy_lines"],
+      "labels": ["milano", "padova", "genova", "laspezia", "livorno", "manoppello", "jesi"],
+      "table": "italy",
+      "focus": {
+        "country": "ita",
+        "city": "genova",
+        "table": "genova"
+      }
+    },
+    {
+      "id": "laspezia",
+      "parent": "italy",
+      "title": "La Spezia",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "italy_lines"],
+      "labels": ["milano", "padova", "genova", "laspezia", "livorno", "manoppello", "jesi"],
+      "table": "italy",
+      "focus": {
+        "country": "ita",
+        "city": "laspezia",
+        "table": "laspezia"
+      }
+    },
+    {
+      "id": "livorno",
+      "parent": "italy",
+      "title": "Livorno",
+      "zoom": 9,
+      "x": 300,
+      "y": 0,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "italy_lines"],
+      "labels": ["milano", "padova", "genova", "laspezia", "livorno", "manoppello", "jesi"],
+      "table": "italy",
+      "focus": {
+        "country": "ita",
+        "city": "livorno",
+        "table": "livorno"
+      }
+    },
+    {
+      "id": "velenje",
+      "parent": "slovenia",
+      "title": "Velenje",
+      "zoom": 12,
+      "x": 300,
+      "y": 350,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "slovenia_lines"],
+      "labels": ["velenje"],
+      "table": "slovenia",
+      "focus": {
+        "country": "svn",
+        "city": "velenje",
+        "table": "velenje"
+      }
+    },
+    {
+      "id": "paskov",
+      "parent": "czech_rep",
+      "title": "Mošnov/Paskov",
+      "zoom": 11,
+      "x": 300,
+      "y": 550,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "czech_lines"],
+      "labels": ["paskov"],
+      "table": "czech_rep",
+      "focus": {
+        "country": "cze",
+        "city": "paskov",
+        "table": "paskov"
+      }
+    },
+    {
+      "id": "gliwice",
+      "parent": "poland",
+      "title": "Gliwice",
+      "zoom": 9,
+      "x": 200,
+      "y": 550,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "poland_lines"],
+      "labels": ["gliwice"],
+      "table": "poland",
+      "focus": {
+        "country": "pol",
+        "city": "gliwice",
+        "table": "gliwice"
+      }
+    },
+    {
+      "id": "bratislava",
+      "parent": "slovakia",
+      "title": "Bratislava",
+      "zoom": 11,
+      "x": 200,
+      "y": 500,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "slovakia_lines"],
+      "labels": ["bratislava", "dobra", "dunajskastreda"],
+      "table": "slovakia",
+      "focus": {
+        "country": "svk",
+        "city": "bratislava",
+        "table": "bratislava"
+      }
+    },
+    {
+      "id": "dobra",
+      "parent": "slovakia",
+      "title": "Dobrá",
+      "zoom": 11,
+      "x": 200,
+      "y": 500,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "slovakia_lines"],
+      "labels": ["bratislava", "dobra", "dunajskastreda"],
+      "table": "slovakia",
+      "focus": {
+        "country": "svk",
+        "city": "dobra",
+        "table": "dobra"
+      }
+    },
+    {
+      "id": "dunajskastreda",
+      "parent": "slovakia",
+      "title": "Dunajskà Streda",
+      "zoom": 11,
+      "x": 200,
+      "y": 500,
+      "type": "zoom-country",
+      "highlights": ["ita", "deu", "aut", "svk", "svn", "hun", "lux", "cze", "hol", "pol"],
+      "lines": ["fvg_blue", "slovakia_lines"],
+      "labels": ["bratislava", "dobra", "dunajskastreda"],
+      "table": "slovakia",
+      "focus": {
+        "country": "svk",
+        "city": "dunajskastreda",
+        "table": "dunajskastreda"
+      }
+    }
+  ]
+}

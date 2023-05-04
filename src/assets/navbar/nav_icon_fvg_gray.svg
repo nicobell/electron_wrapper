@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" viewBox="0 0 65 65">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Ellisse_880" data-name="Ellisse 880" cx="31.483" cy="30.751" rx="31.483" ry="30.751" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Raggruppa_18470" data-name="Raggruppa 18470" transform="translate(-562.062 -13.788)">
+    <circle id="Ellisse_940" data-name="Ellisse 940" cx="32.5" cy="32.5" r="32.5" transform="translate(562.062 13.788)" fill="#87979F"/>
+    <g id="Raggruppa_18265" data-name="Raggruppa 18265" transform="translate(563.173 14.886)">
+      <g id="Gruppo_di_maschere_110" data-name="Gruppo di maschere 110" transform="translate(0 0.562)" clip-path="url(#clip-path)">
+        <path id="Esclusione_29" data-name="Esclusione 29" d="M30.938,61.875A30.937,30.937,0,0,1,9.062,9.061,30.937,30.937,0,0,1,52.814,52.813,30.733,30.733,0,0,1,30.938,61.875Zm1.418-18.719H43.593l5.03,4.512-1.472,3.457-.187.439.427-.214,5.387-2.691.209-.1-.158-.169-8.31-9.141V34.29H41.438L44.5,27.353l.074-.169-.173-.067-4.6-1.744,7-7.162.016-.014.01-.018,1.17-2,.129-.22-.251-.041-25.9-4.348-.1-.018-.064.081L11.5,24.3l-.1.125.114.114L16.4,29.359V31L14.068,32.17l-.162.082.085.159,4.792,8.9.05.089h9.149l2.989,3.815.166.214.128-.24,1.091-2.035Z" transform="translate(-0.596 0.088)" fill="#fff"/>
+      </g>
+      <path id="Ellisse_881" data-name="Ellisse 881" d="M31.314,2.042A29.272,29.272,0,1,0,60.587,31.314,29.305,29.305,0,0,0,31.314,2.042m0-2.042A31.314,31.314,0,1,1,0,31.314,31.314,31.314,0,0,1,31.314,0Z" transform="translate(0.018 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

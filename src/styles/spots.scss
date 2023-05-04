@@ -1,0 +1,95 @@
+
+.spot {
+  position: fixed;
+  z-index: 10;
+  font-size: 0;
+  background-color: var(--main_color);
+  border-radius: 50%;
+  border: none;
+  outline: .25vw solid rgba(255, 255, 255, .8);
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation-name: fadein;
+  animation-duration: 1000ms;
+  /* animation-delay: 1000ms; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.spot:hover {  cursor: pointer; }
+
+.spot.small-spot {
+  background-color: #fff;
+  outline: .1vw solid rgba(255, 255, 255, .8);
+  background-image: none;
+}
+
+.spot.small-spot.active { 
+  background-color: var(--main_color);
+  transform: translate(-.5vw, -.5vw);
+  width: 1.5vw !important;
+  height: 1.5vw !important;
+  outline: .2vw solid rgba(255, 255, 255, .8);
+}
+
+.spot.railway.small-spot.active,
+.spot.railway { background-image: url(../assets/icons/icon_railway.svg); }
+
+.spot.airport.small-spot.active,
+.spot.airport { background-image: url(../assets/icons/icon_airport.svg); }
+
+.spot.autostrada.small-spot.active,
+.spot.autostrada { background-image: url(../assets/icons/icon_autostrtada.svg); }
+
+.spot.country.small-spot.active,
+.spot.country { background-image: url(../assets/icons/icon_country.svg); }
+
+.spot.ferry.small-spot.active,
+.spot.ferry { background-image: url(../assets/icons/icon_ferry.svg); }
+
+.spot.maritime.small-spot.active,
+.spot.maritime { background-image: url(../assets/icons/icon_maritime.svg); }
+
+.spot.teu.small-spot.active,
+.spot.teu { background-image: url(../assets/icons/icon_teu.svg); }
+
+.spot.tons.small-spot.active,
+.spot.tons { background-image: url(../assets/icons/icon_tons.svg); }
+
+.spot.train.small-spot.active,
+.spot.train { background-image: url(../assets/icons/icon_train.svg); }
+
+.spot.vehicle.small-spot.active,
+.spot.vehicle { background-image: url(../assets/icons/icon_vehicle.svg); }
+  
+
+.videobutton {
+  position: fixed;
+  z-index: 10;
+  top: 42%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: fit-content;
+}
+
+.videobutton button {
+  background-color: var(--main_color);
+  border-radius: .4vw;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.25vw;
+  border: none;
+  padding: 2vw 4vw 2vw 7vw;
+  box-shadow: -.5vw .5vw 0 var(--transparent_blue);
+  background-image: url(../assets/icons/icon_360.svg);
+  background-size: 5vw 5vw;
+  background-repeat: no-repeat;
+  background-position: 1vw 50%;
+}

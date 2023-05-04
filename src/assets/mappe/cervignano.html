@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>cervignano</title>
+	<style>
+		.active {
+			background-color: #74C0FF;
+			box-shadow: 0px 0px 0px 8px #1e85d9a8;
+			animation: pin 1s infinite ease-in-out;
+		}
+
+		img {
+			width: 550px;
+			height: 550px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			transform-origin: center;
+			font-size: 0px;
+			background-color: #fff;
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			position: absolute;
+		}
+
+		li:nth-child(1) {
+			left: 180px;
+    top: 102px;
+		}
+
+		li:nth-child(2) {
+			left: 260px;
+    top: 102px;
+		}
+
+		li:nth-child(3) {
+			left: 279px;
+    top: 98px;
+		}
+
+		li:nth-child(4) {
+			left: 207px;
+    top: 78px;
+		}
+
+		li:nth-child(5) {
+			left: 189px;
+    top: 51px;
+		}
+
+		li:nth-child(6) {
+			left: 224px;
+    top: 364px;
+		}
+
+		li:nth-child(7) {
+			left: 260px;
+    top: 70px;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		@keyframes pin {
+			0% {
+				transform:scale3d(1,1,1)
+			}
+
+			50% {
+				transform:scale3d(1.6,1.6,1.6)
+			}
+
+			100% {
+				transform:scale3d(1,1,1)
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<ul id="list">
+			<li class="active">Item 1</li>
+			<li>Item 2</li>
+			<li style="background-color: red;">Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+			<li style="background-color: red;">Item 3-2</li>
+		</ul>
+		<img src="./cervignano.png" alt="">
+	</div>
+
+	<script>
+		let activeIndex = 0; // initialize activeIndex to 0
+		let externalIndex = null;
+
+		const listItems = document.querySelectorAll('#list li');
+		const indexInput = document.querySelector('#index-input');
+
+		// add click event listener to each list item
+		listItems.forEach((item, index) => {
+			item.addEventListener('click', () => {
+				externalIndex = null;
+				updateActiveIndex(index);
+			});
+		});
+
+		function updateActiveIndex(index) {
+			// remove active class from all items
+			listItems.forEach(item => item.classList.remove('active'));
+
+			// add active class to clicked item
+			listItems[index].classList.add('active');
+
+			// set activeIndex to clicked item's index
+			activeIndex = index;
+
+			// log the activeIndex to console
+			console.log(`Active item index: ${activeIndex}`);
+		}
+
+		if(externalIndex!=null){
+			updateActiveIndex(externalIndex);
+		}
+
+
+	</script>
+</body>
+
+</html>

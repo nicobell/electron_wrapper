@@ -1,0 +1,912 @@
+{
+  "labels": {
+    "roro_connections": {
+      "title": "Ro-ro Connections",
+      "stateto": "roro_connections",
+      "color": "#4BDFC6",
+      "x": 74,
+      "y": 68.9,
+      "style": "left"
+    },
+    "dmm_connections": {
+      "title": "Direct Mediterranean Maritime Connections",
+      "stateto": "dmm_connections",
+      "color": "#86A0AC",
+      "x": 43.5,
+      "y": 79,
+      "style": "right"
+    },
+    "feeder_connections": {
+      "title": "Feeder Connections",
+      "stateto": "feeder_connections",
+      "color": "#BDD61E",
+      "x": 47.9,
+      "y": 31,
+      "style": "left"
+    },
+    "italy": {
+      "title": "Italy",
+      "stateto": "italy",
+      "color": "#1E85D9",
+      "x": 63,
+      "y": 73,
+      "style": "left"
+    },
+    "luxemburg": {
+      "title": "Luxemburg",
+      "stateto": "luxemburg",
+      "color": "#1E85D9",
+      "x": 46.9,
+      "y": 35.7,
+      "style": "left"
+    },
+    "germany": {
+      "title": "Germany",
+      "stateto": "germany",
+      "color": "#1E85D9",
+      "x": 55,
+      "y": 25,
+      "style": "left"
+    },
+    "holland": {
+      "title": "Holland",
+      "stateto": "holland",
+      "color": "#1E85D9",
+      "x": 47,
+      "y": 20,
+      "style": "left"
+    },
+    "poland": {
+      "title": "Poland",
+      "stateto": "poland",
+      "color": "#1E85D9",
+      "x": 69,
+      "y": 22,
+      "style": "left"
+    },
+    "czech_rep": {
+      "title": "Czech Republic",
+      "stateto": "czech_rep",
+      "color": "#1E85D9",
+      "x": 60,
+      "y": 33,
+      "style": "left"
+    },
+    "austria": {
+      "title": "Austria",
+      "stateto": "austria",
+      "color": "#1E85D9",
+      "x": 60,
+      "y": 43,
+      "style": "left"
+    },
+    "slovakia": {
+      "title": "Slovakia",
+      "stateto": "slovakia",
+      "color": "#1E85D9",
+      "x": 73,
+      "y": 40.5,
+      "style": "left"
+    },
+    "slovenia": {
+      "title": "Slovenia",
+      "stateto": "slovenia",
+      "color": "#1E85D9",
+      "x": 62,
+      "y": 58.5,
+      "style": "topleft"
+    },
+    "hungary": {
+      "title": "Hungary",
+      "stateto": "hungary",
+      "color": "#1E85D9",
+      "x": 72,
+      "y": 49,
+      "style": "left"
+    },
+    "ravenna": {
+      "title": "Ravenna",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 49.9,
+      "y": 31,
+      "style": "right"
+    },
+    "ravenna_dmm": {
+      "title": "Ravenna",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 40.9,
+      "y": 26.4,
+      "style": "topright"
+    },
+    "ancona": {
+      "title": "Ancona",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 53.9,
+      "y": 43.4,
+      "style": "topright"
+    },
+    "ancona_dmm": {
+      "title": "Ancona",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 44.3,
+      "y": 31,
+      "style": "topright"
+    },
+    "venezia": {
+      "title": "Venezia",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 50.4,
+      "y": 24.4,
+      "style": "right"
+    },
+    "venezia_dmm": {
+      "title": "Venezia",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 41.3,
+      "y": 21.3,
+      "style": "topright"
+    },
+    "rjeka": {
+      "title": "Rijeka",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 49.3,
+      "y": 17.2,
+      "style": "left"
+    },
+    "gioia_tauro": {
+      "title": "Gioia Tauro",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 52,
+      "y": 51,
+      "style": "left"
+    },
+    "malta": {
+      "title": "Malta",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 50.2,
+      "y": 61.7,
+      "style": "left"
+    },
+    "piraeus": {
+      "title": "Piraeus",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 68.3,
+      "y": 52.9,
+      "style": "left"
+    },
+    "tekirdag": {
+      "title": "Tekirdağ",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 72.3,
+      "y": 37.6,
+      "style": "right"
+    },
+    "gebze": {
+      "title": "Gebze",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 77,
+      "y": 38.9,
+      "style": "right"
+    },
+    "derince":{
+      "title": "Derince",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 80.7,
+      "y": 39.6,
+      "style": "left"
+    },
+    "gemlik": {
+      "title": "Gemlik",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 78.8,
+      "y": 47.4,
+      "style": "topleft"
+    },
+    "aliaga": {
+      "title": "Aliaga",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 74.2,
+      "y": 48.1,
+      "style": "left"
+    },
+    "izmir": {
+      "title": "Izmir",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 74.4,
+      "y": 56.4,
+      "style": "topleft"
+    },
+    "limassol": {
+      "title": "Limassol",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 87.8,
+      "y": 67.3,
+      "style": "left"
+    },
+    "iskenderun": {
+      "title": "Iskenderun",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 93.8,
+      "y": 60,
+      "style": "left"
+    },
+    "beirut": {
+      "title": "Beirut",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 92.9,
+      "y": 76.2,
+      "style": "topleft"
+    },
+    "haifa": {
+      "title": "Haifa",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 92,
+      "y": 80.2,
+      "style": "topleft"
+    },
+    "ashdod": {
+      "title": "Ashdod",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 91.2,
+      "y": 84.6,
+      "style": "topleft"
+    },
+    "portsaid_dmm": {
+      "title": "Port Said",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 86.5,
+      "y": 88.3,
+      "style": "topleft"
+    },
+    "damietta": {
+      "title": "Damietta",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 81.4,
+      "y": 81.7,
+      "style": "right"
+    },
+    "alexandria": {
+      "title": "Alexandria",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 78.2,
+      "y": 88.6,
+      "style": "topright"
+    },
+    "duisburg": {
+      "title": "Duisburg",
+      "stateto": "duisburg",
+      "color": "#1E85D9",
+      "x": 39,
+      "y": 36.7,
+      "style": "right"
+    },
+    "koln": {
+      "title": "Köln",
+      "stateto": "koln",
+      "color": "#1E85D9",
+      "x": 44.9,
+      "y": 40.2,
+      "style": "left"
+    },
+    "numberg": {
+      "title": "Numberg",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 56.1,
+      "y": 44.5,
+      "style": "left"
+    },
+    "burghausen": {
+      "title": "Burghausen",
+      "stateto": "burghausen",
+      "color": "#1E85D9",
+      "x": 61.7,
+      "y": 62.1,
+      "style": "left"
+    },
+    "munchen": {
+      "title": "München",
+      "stateto": "munchen",
+      "color": "#1E85D9",
+      "x": 58.5,
+      "y": 70,
+      "style": "topleft"
+    },
+    "giengen": {
+      "title": "Giengen",
+      "stateto": "giengen",
+      "color": "#1E85D9",
+      "x": 52.9,
+      "y": 59.2,
+      "style": "left"
+    },
+    "karlsruhe": {
+      "title": "Karlsruhe",
+      "stateto": "karlsruhe",
+      "color": "#1E85D9",
+      "x": 43.6,
+      "y": 63,
+      "style": "topright"
+    },
+    "ludwigshafen": {
+      "title": "Ludwigshafen",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 44.5,
+      "y": 48.3,
+      "style": "right"
+    },
+    "istanbul": {
+      "title": "Istanbul",
+      "stateto": "",
+      "color": "#4BDFC6",
+      "x": 73.8,
+      "y": 46.3,
+      "style": "left"
+    },
+    "cesme": {
+      "title": "Cesme",
+      "stateto": "",
+      "color": "#4BDFC6",
+      "x": 67.8,
+      "y": 59,
+      "style": "left"
+    },
+    "mersin": {
+      "title": "Mersin",
+      "stateto": "",
+      "color": "#4BDFC6",
+      "x": 86.7,
+      "y": 66.7,
+      "style": "left"
+    },
+    "istanbul_global": {
+      "title": "Istanbul",
+      "stateto": "",
+      "color": "#4BDFC6",
+      "x": 53.6,
+      "y": 46,
+      "style": "left"
+    },
+    "cesme_global": {
+      "title": "Cesme",
+      "stateto": "",
+      "color": "#4BDFC6",
+      "x": 49.8,
+      "y": 55.1,
+      "style": "topright"
+    },
+    "mersin_global": {
+      "title": "Mersin",
+      "stateto": "",
+      "color": "#4BDFC6",
+      "x": 56,
+      "y": 49.6,
+      "style": "left"
+    },
+    "porto_trieste": {
+      "title": "Port of Trieste",
+      "stateto": "porto_trieste",
+      "color": "#1E85D9",
+      "x": 73,
+      "y": 86.3,
+      "style": "topleft"
+    },
+    "interporto_freeeste": {
+      "title": "Trieste Inland Terminal and Freeste",
+      "stateto": "interporto_freeeste",
+      "color": "#1E85D9",
+      "x": 78.3,
+      "y": 75.3,
+      "style": "topleft double"
+    },
+    "interporto_gorizia": {
+      "title": "Gorizia Inland Terminal SDAG",
+      "stateto": "interporto_gorizia",
+      "color": "#1E85D9",
+      "x": 71.4,
+      "y": 53,
+      "style": "left"
+    },
+    "porto_monfalcone": {
+      "title": "Port of Monfalcone",
+      "stateto": "porto_monfalcone",
+      "color": "#1E85D9",
+      "x": 71.7,
+      "y": 66,
+      "style": "left"
+    },
+    "trieste_airport": {
+      "title": "Trieste Airport",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 64.6,
+      "y": 63.3,
+      "style": "right"
+    },
+    "porto_nogaro": {
+      "title": "Port Nogaro",
+      "stateto": "porto_nogaro",
+      "color": "#1E85D9",
+      "x": 59.8,
+      "y": 74.2,
+      "style": "topleft"
+    },
+    "interporto_cervignano": {
+      "title": "Cervignano Inland Terminal",
+      "stateto": "interporto_cervignano",
+      "color": "#1E85D9",
+      "x": 51.8,
+      "y": 59.2,
+      "style": "right"
+    },
+    "interporto_pordenone": {
+      "title": "Pordenone Inland Terminal",
+      "stateto": "interporto_pordenone",
+      "color": "#1E85D9",
+      "x": 40.2,
+      "y": 52.3,
+      "style": "right"
+    },
+    "interporto_trieste": {
+      "title": "",
+      "stateto": "interporto_freeeste",
+      "x": 50,
+      "y": 50,
+      "style": "hidden"
+    },
+    "freeeste": {
+      "title": "",
+      "stateto": "interporto_freeeste",
+      "x": 50,
+      "y": 50,
+      "style": "hidden"
+    },
+    "porto_trieste_small": {
+      "title": "Port of Trieste",
+      "stateto": "porto_trieste",
+      "color": "#1E85D9",
+      "x": 73,
+      "y": 86.3,
+      "style": "topleft"
+    },
+    "interporto_freeeste_small": {
+      "title": "Trieste Inland Terminal and Freeste",
+      "stateto": "interporto_freeeste",
+      "color": "#1E85D9",
+      "x": 78.3,
+      "y": 75.3,
+      "style": "topleft double"
+    },
+    "interporto_gorizia_small": {
+      "title": "Gorizia Inland Terminal SDAG",
+      "stateto": "interporto_gorizia",
+      "color": "#1E85D9",
+      "x": 71.4,
+      "y": 53,
+      "style": "left"
+    },
+    "porto_monfalcone_small": {
+      "title": "Port of Monfalcone",
+      "stateto": "porto_monfalcone",
+      "color": "#1E85D9",
+      "x": 71.7,
+      "y": 66,
+      "style": "left"
+    },
+    "trieste_airport_small": {
+      "title": "Trieste Airport",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 64.6,
+      "y": 63.3,
+      "style": "right"
+    },
+    "porto_nogaro_small": {
+      "title": "Port Nogaro",
+      "stateto": "porto_nogaro",
+      "color": "#1E85D9",
+      "x": 59.8,
+      "y": 74.2,
+      "style": "topleft"
+    },
+    "interporto_cervignano_small": {
+      "title": "Cervignano Inland Terminal",
+      "stateto": "interporto_cervignano",
+      "color": "#1E85D9",
+      "x": 51.8,
+      "y": 59.2,
+      "style": "right"
+    },
+    "interporto_pordenone_small": {
+      "title": "Pordenone Inland Terminal",
+      "stateto": "interporto_pordenone",
+      "color": "#1E85D9",
+      "x": 40.2,
+      "y": 52.3,
+      "style": "right"
+    },
+    "interporto_trieste_small": {
+      "title": "",
+      "stateto": "interporto_freeeste",
+      "x": 50,
+      "y": 50,
+      "style": "hidden"
+    },
+    "freeeste_small": {
+      "title": "",
+      "stateto": "interporto_freeeste",
+      "x": 50,
+      "y": 50,
+      "style": "hidden"
+    },
+    "xingang": {
+      "title": "Xin'gang",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 76,
+      "y": 47.7,
+      "style": "right"
+    },
+    "dalian": {
+      "title": "Dalian",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 80.5,
+      "y": 47.4,
+      "style": "left"
+    },
+    "busan": {
+      "title": "Busan",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 83.6,
+      "y": 50.7,
+      "style": "left"
+    },
+    "ningbo": {
+      "title": "Ningbo",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 76.7,
+      "y": 54.2,
+      "style": "right"
+    },
+    "shekou": {
+      "title": "Shekou",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 75,
+      "y": 57.5,
+      "style": "right"
+    },
+    "shangai": {
+      "title": "Shangai",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 80.9,
+      "y": 59.7,
+      "style": "topleft"
+    },
+    "singapore": {
+      "title": "Singapore",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 75.2,
+      "y": 75.8,
+      "style": "topleft"
+    },
+    "kingabdullah": {
+      "title": "King Abdullah",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 56,
+      "y": 56.4,
+      "style": "left"
+    },
+    "salalah": {
+      "title": "Salalah",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 60.8,
+      "y": 60.6,
+      "style": "left"
+    },
+    "marsaxlokk": {
+      "title": "Marsaxlokk",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 50,
+      "y": 75,
+      "style": "left"
+    },
+    "portsaid": {
+      "title": "Port Said",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 50,
+      "y": 80,
+      "style": "left"
+    },
+    "jeddah": {
+      "title": "Jeddah",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 53.3,
+      "y": 64.5,
+      "style": "topright"
+    },
+    "portklang": {
+      "title": "Port Klang",
+      "stateto": "",
+      "color": "#EB503F",
+      "x": 70.2,
+      "y": 67.5,
+      "style": "right"
+    },
+    "wolfurt": {
+      "title": "Wolfurt",
+      "stateto": "wolfurt",
+      "color": "#1E85D9",
+      "x": 35.8,
+      "y": 42.1,
+      "style": "right"
+    },
+    "salzburg": {
+      "title": "Salzburg",
+      "stateto": "salzburg",
+      "color": "#1E85D9",
+      "x": 48,
+      "y": 45,
+      "style": "topright"
+    },
+    "lambach": {
+      "title": "Lambach",
+      "stateto": "lambach",
+      "color": "#1E85D9",
+      "x": 49.7,
+      "y": 37.4,
+      "style": "right"
+    },
+    "wels": {
+      "title": "Wels",
+      "stateto": "wels",
+      "color": "#1E85D9",
+      "x": 55.9,
+      "y": 42.6,
+      "style": "topleft"
+    },
+    "linz": {
+      "title": "Linz",
+      "stateto": "linz",
+      "color": "#1E85D9",
+      "x": 56.2,
+      "y": 34.1,
+      "style": "left"
+    },
+    "wien": {
+      "title": "Wien",
+      "stateto": "wien",
+      "color": "#1E85D9",
+      "x": 63.6,
+      "y": 35.2,
+      "style": "left"
+    },
+    "villach": {
+      "title": "Villach",
+      "stateto": "villach",
+      "color": "#1E85D9",
+      "x": 54.7,
+      "y": 55.3,
+      "style": "topleft"
+    },
+    "kapfenberg": {
+      "title": "Kapfenberg",
+      "stateto": "kapfenberg",
+      "color": "#1E85D9",
+      "x": 59.7,
+      "y": 48.7,
+      "style": "topleft"
+    },
+    "milano": {
+      "title": "Milano",
+      "stateto": "milano",
+      "color": "#1E85D9",
+      "x": 41.5,
+      "y": 24.5,
+      "style": "right"
+    },
+    "padova": {
+      "title": "Padova",
+      "stateto": "padova",
+      "color": "#1E85D9",
+      "x": 48.4,
+      "y": 25.2,
+      "style": "right"
+    },
+    "genova": {
+      "title": "Genova",
+      "stateto": "genova",
+      "color": "#1E85D9",
+      "x": 40.2,
+      "y": 33.6,
+      "style": "right"
+    },
+    "laspezia": {
+      "title": "La Spezia",
+      "stateto": "laspezia",
+      "color": "#1E85D9",
+      "x": 42.4,
+      "y": 40.7,
+      "style": "topright"
+    },
+    "livorno": {
+      "title": "Livorno",
+      "stateto": "livorno",
+      "color": "#1E85D9",
+      "x": 44.6,
+      "y": 44.4,
+      "style": "topright"
+    },
+    "jesi": {
+      "title": "Jesi (Ancona)",
+      "stateto": "jesi",
+      "color": "#1E85D9",
+      "x": 56.6,
+      "y": 37.4,
+      "style": "left"
+    },
+    "manoppello": {
+      "title": "Manoppello",
+      "stateto": "manoppello",
+      "color": "#1E85D9",
+      "x": 52.8,
+      "y": 49.5,
+      "style": "topright"
+    },
+    "rotterdam": {
+      "title": "Rotterdam",
+      "stateto": "rotterdam",
+      "color": "#1E85D9",
+      "x": 45.9,
+      "y": 27.3,
+      "style": "left"
+    },
+    "budapest": {
+      "title": "Budapest",
+      "stateto": "budapest",
+      "color": "#1E85D9",
+      "x": 68,
+      "y": 39.5,
+      "style": "left"
+    },
+    "hamburg": {
+      "title": "Hamburg",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 49,
+      "y": 18.6,
+      "style": "dark"
+    },
+    "kiel": {
+      "title": "Kiel",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 51.3,
+      "y": 12.5,
+      "style": "dark"
+    },
+    "berlin": {
+      "title": "Berlin",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 64,
+      "y": 28.5,
+      "style": "dark"
+    },
+    "leipzig": {
+      "title": "Leipzig",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 61.2,
+      "y": 38,
+      "style": "dark"
+    },
+    "kuanas": {
+      "title": "Kuanas",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 91,
+      "y": 11,
+      "style": "dark"
+    },
+    "zeebrugge": {
+      "title": "Zeebrugge",
+      "stateto": "",
+      "color": "#1E85D9",
+      "x": 36.5,
+      "y": 21.6,
+      "style": "dark"
+    },
+    "bettembourg": {
+      "title": "Bettembourg",
+      "stateto": "bettembourg",
+      "color": "#1E85D9",
+      "x": 46.2,
+      "y": 33.2,
+      "style": "left"
+    },
+    "velenje": {
+      "title": "Velenje",
+      "stateto": "velenje",
+      "color": "#1E85D9",
+      "x": 59.5,
+      "y": 41.8,
+      "style": "left"
+    },
+    "paskov": {
+      "title": "Mošnov/Paskov",
+      "stateto": "paskov",
+      "color": "#1E85D9",
+      "x": 69.1,
+      "y": 42.3,
+      "style": "topleft"
+    },
+    "gliwice": {
+      "title": "Gliwice",
+      "stateto": "gliwice",
+      "color": "#1E85D9",
+      "x": 65.5,
+      "y": 41.3,
+      "style": "left"
+    },
+    "bratislava": {
+      "title": "Bratislava",
+      "stateto": "bratislava",
+      "color": "#1E85D9",
+      "x": 56.5,
+      "y": 44.9,
+      "style": "right"
+    },
+    "dobra": {
+      "title": "Dobrá",
+      "stateto": "dobra",
+      "color": "#1E85D9",
+      "x": 76.6,
+      "y": 41.3,
+      "style": "left"
+    },
+    "dunajskastreda": {
+      "title": "Dunajskà Streda",
+      "stateto": "dunajskastreda",
+      "color": "#1E85D9",
+      "x": 62.9,
+      "y": 51.3,
+      "style": "topleft"
+    }
+  }
+}

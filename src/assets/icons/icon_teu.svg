@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-icon_teu">
+      <rect width="26" height="26"/>
+    </clipPath>
+  </defs>
+  <g id="icon_teu" clip-path="url(#clip-icon_teu)">
+    <path id="Esclusione_38" data-name="Esclusione 38" d="M990.907,11857.744H971.486a1,1,0,0,1-1-1v-9.33a1,1,0,0,1,1-1h19.421a1,1,0,0,1,1,1v9.33A1,1,0,0,1,990.907,11857.744Zm-3.271-9.913a.3.3,0,0,0-.3.3v7.9a.3.3,0,0,0,.3.3h1.4a.3.3,0,0,0,.3-.3v-7.9a.3.3,0,0,0-.3-.3Zm-4.869,0a.3.3,0,0,0-.3.3v7.9a.3.3,0,0,0,.3.3h1.4a.3.3,0,0,0,.3-.3v-7.9a.3.3,0,0,0-.3-.3Zm-4.869,0a.3.3,0,0,0-.3.3v7.9a.3.3,0,0,0,.3.3h1.4a.3.3,0,0,0,.3-.3v-7.9a.3.3,0,0,0-.3-.3Zm-4.544,0a.3.3,0,0,0-.3.3v7.9a.3.3,0,0,0,.3.3h1.4a.3.3,0,0,0,.3-.3v-7.9a.3.3,0,0,0-.3-.3Z" transform="translate(-967.859 -11839.402)" fill="#fff"/>
+  </g>
+</svg>

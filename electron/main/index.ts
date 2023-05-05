@@ -1,4 +1,4 @@
-import { app, BrowserWindow, shell, ipcMain } from 'electron'
+import { app, BrowserWindow, shell, ipcMain, powerSaveBlocker} from 'electron'
 import { release } from 'node:os'
 import { join } from 'node:path'
 //import path from 'path';
@@ -19,6 +19,8 @@ ipcMain.handle('getPublicFolderPath', (event) => {
 // ├─┬ dist
 // │ └── index.html    > Electron-Renderer
 //
+powerSaveBlocker.start('prevent-app-suspension');
+
 process.env.DIST_ELECTRON = join(__dirname, '..')
 process.env.DIST = join(process.env.DIST_ELECTRON, '../dist')
 process.env.PUBLIC = process.env.VITE_DEV_SERVER_URL

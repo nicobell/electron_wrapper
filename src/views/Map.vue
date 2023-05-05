@@ -10,10 +10,6 @@
 
     <!-- //////////////////// PRIMARY TABLE INFO //////////////////// -->
     <div ref="infogrid" class="info-grid show">
-      <!-- <div v-if="this.getTable(this.currentTable).title && this.currentId != 'menu_fvg' && this.currentState.parent != 'menu_fvg'" class="title-card">
-        <h3>{{ this.getTable(this.currentTable).subtitle }}</h3>
-        <h2>{{ this.getTable(this.currentTable).title }}</h2>
-      </div> -->
 
       <div :class="{
         'grid': true,
@@ -60,7 +56,7 @@
       </div>
     </div>
 
-    <div class="idle" v-if="this.onIdle && this.cycleCount==4">
+    <div class="idle" v-if="this.onIdle">
       <div class="idle-text">Touch to explore</div>
       <img class="icon-hand" src="../assets/icons/icon-hand.svg" width="31px" height="36px">
       <div class="idle-hand-animation"></div>
@@ -686,7 +682,7 @@ export default {
       }, 120000);
     },
     cycleMenu() {
-      //console.log('idle ->', this.steps[this.cycleCount], this.cycleCount)
+      ////console.log('idle ->', this.steps[this.cycleCount], this.cycleCount)
 
       this.zoomToState(this.steps[this.cycleCount])
       this.$refs.appwrapper.classList.remove('idle')
@@ -694,7 +690,7 @@ export default {
       this.timeoutCycle = setTimeout(() => {
         this.cycleCount++
 
-        //console.log(this.steps[this.cycleCount], this.cycleCount)
+        ////console.log(this.steps[this.cycleCount], this.cycleCount)
 
         if(this.cycleCount<4)
           this.cycleMenu()
@@ -763,7 +759,7 @@ export default {
     background-position: left top;
 }
 
-.about .idle .icon-hand {
+.about .idle {
   opacity: 0;
   transition: opacity 2000ms ease;
   pointer-events: none;

@@ -35,7 +35,7 @@ export default {
 
 			listItems.forEach(item => item.classList.remove('active'));
 
-			console.log(this.activeIndex, listItems[index])
+			//console.log(this.activeIndex, listItems[index])
 			listItems[index].classList.add('active');
 			
 			this.activeIndex = index;

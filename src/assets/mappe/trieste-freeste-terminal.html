@@ -30,25 +30,21 @@
 			position: absolute;
 		}
 
-		li:nth-child(5) {
-			left: 189px;
-    top: 294px;
-		}
 
 		li:nth-child(6) {
 			left: 305px;
-    top: 224px;
+			top: 224px;
 		}
 
 		li:nth-child(7) {
 			left: 231px;
-    top: 234px;
+			top: 234px;
 		}
 
 		li:nth-child(8) {
 			left: 93px;
-    top: 228px;
-}
+			top: 228px;
+		}
 
 
 
@@ -59,15 +55,15 @@
 
 		@keyframes pin {
 			0% {
-				transform:scale3d(1,1,1)
+				transform: scale3d(1, 1, 1)
 			}
 
 			50% {
-				transform:scale3d(1.6,1.6,1.6)
+				transform: scale3d(1.6, 1.6, 1.6)
 			}
 
 			100% {
-				transform:scale3d(1,1,1)
+				transform: scale3d(1, 1, 1)
 			}
 		}
 	</style>
@@ -76,11 +72,6 @@
 <body>
 	<div class="container">
 		<ul id="list">
-			<li style="display: none;">hidden</li>
-			<li style="display: none;">hidden</li>
-			<li style="display: none;">hidden</li>
-			<li style="display: none;">hidden</li>
-			<li>Item 5</li>
 			<li>Item 6</li>
 			<li>Item 7</li>
 			<li>Item 8</li>
@@ -114,14 +105,12 @@
 			activeIndex = index;
 
 			// log the activeIndex to console
-			//console.log(`Active item index: ${activeIndex}`);
+			console.log(`Active item index: ${activeIndex}`);
 		}
 
-		if(externalIndex!=null){
+		if (externalIndex != null) {
 			updateActiveIndex(externalIndex);
 		}
-
-
 	</script>
 </body>
 

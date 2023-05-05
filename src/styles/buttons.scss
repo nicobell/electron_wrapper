@@ -118,3 +118,41 @@
 .button-wrapper button.medit.active::before { background-image: url(../assets/navbar/nav_icon_mediterranean.svg); }
 .button-wrapper button.eu.active::before { background-image: url(../assets/navbar/nav_icon_europe.svg); }
 .button-wrapper button.fvg.active::before { background-image: url(../assets/navbar/nav_icon_fvg.svg); }
+
+
+
+.prev-spot {
+    position: absolute;
+    left: .5vw;
+    bottom: -.5vw;
+    background: var(--main_color);
+    color: #fff;
+    font-size: 1vw;
+    padding: .5vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: .25vw;
+    border: none;
+    background-image: url(../assets/icon_arrow_left_white.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.next-spot {
+    position: absolute;
+    right: .5vw;
+    bottom: -.5vw;
+    background: var(--main_color);
+    color: #fff;
+    font-size: 1vw;
+    padding: .5vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: .25vw;
+    border: none;
+    background-image: url(../assets/icon_arrow_right_white.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}

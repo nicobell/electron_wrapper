@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-icon_arrow_left_white">
+      <rect width="28" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="icon_arrow_left_white" clip-path="url(#clip-icon_arrow_left_white)">
+    <g id="Raggruppa_18925" data-name="Raggruppa 18925" transform="translate(2.264 5.853)">
+      <path id="Tracciato_34803" data-name="Tracciato 34803" d="M0,0,8.147,8.147,16.294,0" transform="translate(8.147) rotate(90)" fill="none" stroke="#fff" stroke-width="3"/>
+      <path id="Tracciato_35269" data-name="Tracciato 35269" d="M17324.039-6817h24.018" transform="translate(-17322.32 6825.147)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

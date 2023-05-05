@@ -29,6 +29,14 @@
   background-image: none;
 }
 
+.spot.small-spot:not(.active):not(.airport) { animation: border 2s infinite ease-in-out; }
+
+@keyframes border {
+  0% { outline: .1vw solid rgba(255, 255, 255, .8); }
+  50% { outline: .5vw solid rgba(255, 255, 255, 0); }
+  100% { outline: .1vw solid rgba(255, 255, 255, .8); }
+}
+
 .spot.small-spot.active { 
   background-color: var(--main_color);
   transform: translate(-.5vw, -.5vw);

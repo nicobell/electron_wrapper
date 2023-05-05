@@ -32,22 +32,27 @@
 
 		li:nth-child(1) {
 			left: 366px;
-    top: 350px;
+			top: 350px;
 		}
 
 		li:nth-child(2) {
 			left: 222px;
-    top: 359px;
+			top: 359px;
 		}
 
 		li:nth-child(3) {
-			left: 372px;
-    top: 185px;
+			left: 366px;
+    		top: 255px;
 		}
 
 		li:nth-child(4) {
-		    left: 312px;
-    top: 434px;
+			left: 312px;
+			top: 434px;
+		}
+
+		li:nth-child(5) {
+			left: 379px;
+			top: 196px
 		}
 
 		ul {
@@ -57,15 +62,15 @@
 
 		@keyframes pin {
 			0% {
-				transform:scale3d(1,1,1)
+				transform: scale3d(1, 1, 1)
 			}
 
 			50% {
-				transform:scale3d(1.6,1.6,1.6)
+				transform: scale3d(1.6, 1.6, 1.6)
 			}
 
 			100% {
-				transform:scale3d(1,1,1)
+				transform: scale3d(1, 1, 1)
 			}
 		}
 	</style>
@@ -78,6 +83,7 @@
 			<li>Item 2</li>
 			<li>Item 3</li>
 			<li>Item 4</li>
+			<li>Item 5</li>
 		</ul>
 		<img src="./trieste-freeste-inland.png" alt="">
 	</div>
@@ -108,14 +114,12 @@
 			activeIndex = index;
 
 			// log the activeIndex to console
-			//console.log(`Active item index: ${activeIndex}`);
+			console.log(`Active item index: ${activeIndex}`);
 		}
 
-		if(externalIndex!=null){
+		if (externalIndex != null) {
 			updateActiveIndex(externalIndex);
 		}
-
-
 	</script>
 </body>
 

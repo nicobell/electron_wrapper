@@ -2,6 +2,12 @@
 <template>
   <div v-if="this.currentState.id" ref="appwrapper" class="about">
 
+    <div v-if="this.onIdle" class="idle-logo">
+      <div class="idle-text">Touch to explore</div>
+      <div class="icon-hand"></div>
+      <div class="idle-hand-animation"></div>
+    </div>
+
     <!-- //////////////////// PRIMARY TABLE INFO //////////////////// -->
     <div ref="infogrid" class="info-grid show">
       <!-- <div v-if="this.getTable(this.currentTable).title && this.currentId != 'menu_fvg' && this.currentState.parent != 'menu_fvg'" class="title-card">
@@ -54,7 +60,7 @@
       </div>
     </div>
 
-    <div class="idle">
+    <div class="idle" v-if="this.onIdle && this.cycleCount==4">
       <div class="idle-text">Touch to explore</div>
       <img class="icon-hand" src="../assets/icons/icon-hand.svg" width="31px" height="36px">
       <div class="idle-hand-animation"></div>
@@ -62,13 +68,13 @@
 
     <div v-if="this.currentState.parent=='menu_mediterranean'" class="gradient-mediterranean">
       <img v-if="this.currentId=='dmm_connections'" src="../assets/gradient-grey.png" alt="">
-      <h2 v-if="this.currentId=='dmm_connections'">Direct Nediterranean <br> Maritime Connections</h2>
+      <h2 v-if="this.currentId=='dmm_connections'" class="dmm">Direct Mediterranean <br> Maritime Connections</h2>
 
       <img v-if="this.currentId=='roro_connections'" src="../assets/gradient-light-blue.png" alt="">
-      <h2 v-if="this.currentId=='roro_connections'">RoRo Connections</h2>
+      <h2 v-if="this.currentId=='roro_connections'" class="roro">Ro-Ro <br> Connections</h2>
 
       <img v-if="this.currentId=='feeder_connections'" src="../assets/gradient-yellow.png" alt="">
-      <h2 v-if="this.currentId=='feeder_connections'">Feeder Connections</h2>
+      <h2 v-if="this.currentId=='feeder_connections'" class="feeder">Feeder <br> Connections</h2>
 
     </div>
 
@@ -78,8 +84,9 @@
         :src="this.videoSrc"
         :id="this.currentState.id"
         :interactive="this.interactivevideo"
-        @close-video="this.interact()" 
+        @close-video="this.interact(false)" 
         :title="this.videoTitle" 
+        :idle="this.isOnIdle"
       />
     </div>
 
@@ -112,6 +119,8 @@
       'logo': true,
       'porti': this.currentId == 'menu_fvg' || this.currentState.parent == 'menu_fvg'
     }"></div>
+
+    <div v-if="!this.interactivevideo" class="logo-camera"></div>
 
     <!-- //////////////////// LABELS ON MAP //////////////////// -->
     <div v-if="this.showLabels && this.currentState.parent!='menu_fvg'" class="labels">
@@ -154,7 +163,7 @@
 
     <div class="videobutton"
       v-if="this.currentState.parent=='menu_fvg' && this.showLabels">
-      <button @click="this.interact()"> VIRTUAL <br> TOUR </button>
+      <button @click="this.interact(true)"> VIRTUAL <br> TOUR </button>
     </div>
     <!-- @click="this.showvideo(this.getSpot(label))" -->
 
@@ -402,7 +411,10 @@ export default {
       inOut: 'in',
       customduration: 0,
       timeoutLabels: null,
+      onIdle: false,
       timeoutIdle: null,
+      timoutCycle: null,
+      cycleCount: 0,
       
       videoSrc: [],
       videoTitle: ""
@@ -439,8 +451,11 @@ export default {
 
       return d
     },
+    isOnIdle() {
+      return this.onIdle
+    },
     currentState() {
-      let s = { lines: [], parent: "" }
+      let s = { lines: [], parent: "", focus: { city: "" } }
       if(this.getState(this.currentId).lines)
         s = this.getState(this.currentId)
       return s
@@ -486,6 +501,15 @@ export default {
       //parameter to control enabling of buttons for animations, all disabled while another one is running, to avoid conflicts popping up
       //also, do not execute again zoomToState() if we already are in the same state
       if(id != this.currentId && this.enableButtons) {
+
+        if(id=='menu_global')
+          this.cycleCount = 0
+        if(id=='menu_mediterranean')
+          this.cycleCount = 1
+        if(id=='menu_europe')
+          this.cycleCount = 2
+        if(id=='menu_fvg')
+          this.cycleCount = 3
 
         //get next state to compute animation and state
         let nextstate = this.getState(id)
@@ -642,40 +666,69 @@ export default {
       this.videoSrc = this.currentState.videosrc
       this.videoTitle = this.currentState.title
     },
-    interact() {
-      this.interactivevideo = !this.interactivevideo
+    interact(val) {
+      this.interactivevideo = val
     },
     resetIdle() {
       this.$refs.appwrapper.classList.remove('idle')
       clearTimeout(this.timeoutIdle)
+      clearTimeout(this.timeoutCycle)
+      this.onIdle = false
     },
     setupIdle() {
       this.timeoutIdle = setTimeout(() => {
-        this.interactivevideo = false
+        /* this.interactivevideo = false
         this.$refs.appwrapper.classList.add('idle')
+        this.onIdle = true */
+        this.interact(false)
+        this.onIdle = true
+        this.cycleMenu()
       }, 120000);
+    },
+    cycleMenu() {
+      //console.log('idle ->', this.steps[this.cycleCount], this.cycleCount)
+
+      this.zoomToState(this.steps[this.cycleCount])
+      this.$refs.appwrapper.classList.remove('idle')
+      
+      this.timeoutCycle = setTimeout(() => {
+        this.cycleCount++
+
+        //console.log(this.steps[this.cycleCount], this.cycleCount)
+
+        if(this.cycleCount<4)
+          this.cycleMenu()
+
+        if(this.cycleCount==4) {
+          this.cycleCount = 0
+          this.zoomToState('menu_global')
+          this.$refs.appwrapper.classList.add('idle')
+
+          this.timeoutCycle = setTimeout(() => {
+            this.cycleMenu()  
+          }, 10000);
+        }
+      }, 10000);
     }
   },
   mounted() {
-    /* await fetch('/json/states.json')
-      .then(res => res.json())
-      .then(json => { this.states = json.states })
+    this.setupIdle()
 
-    await fetch('/json/labels.json')
-      .then(res => res.json())
-      .then(json => { this.labels = json.labels })
+    window.addEventListener('touchstart', () => {
+      this.resetIdle()
+      this.setupIdle()
+      //this.onIdle = false
+    })
 
-    await fetch('/json/tables.json')
-      .then(res => res.json())
-      .then(json => { this.tables = json.tables })
+    window.addEventListener('click', () => {
+      this.resetIdle()
+      this.setupIdle()
+      //this.onIdle = false
+    })
 
-    await fetch('/json/legends.json')
-      .then(res => res.json())
-      .then(json => { this.legends = json.legends })
-  
-    await fetch('/json/spots.json')
-      .then(res => res.json())
-      .then(json => { this.spots = json.spots }) */
+    window.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
 
     gsap.registerPlugin(CustomEase);
 
@@ -689,32 +742,12 @@ export default {
       this.showLabels = true
       this.enableButtons = true
     }, 2000);
-  },
-  created() {
-    this.setupIdle()
 
-    window.addEventListener('touchstart', () => {
-      //console.log('reset timer touch')
-      this.resetIdle()
-      this.setupIdle()
-    })
-
-    window.addEventListener('click', () => {
-      //console.log('reset timer click')
-      this.resetIdle()
-      this.setupIdle()
-    })
-
-    window.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
-    });
   }
 }
 </script>
 
 <style>
-
-
 .about::after {
     content: '';
     top: 0;
@@ -730,7 +763,7 @@ export default {
     background-position: left top;
 }
 
-.about .idle {
+.about .idle .icon-hand {
   opacity: 0;
   transition: opacity 2000ms ease;
   pointer-events: none;
@@ -747,6 +780,7 @@ export default {
   cursor: pointer;
 }
 
+.about .idle-logo .idle-hand-animation,
 .about .idle .idle-hand-animation {
   position: absolute;
   width: 200px;
@@ -800,6 +834,52 @@ export default {
   transition: opacity 2000ms ease;
 }
 
+
+.about .idle-logo .idle-hand-animation {
+  top: 2vw;
+  left: 2.75vw;
+}
+
+.about .idle-logo {
+  content: '';
+  position: fixed;
+  top: 5vw;
+  left: 88vw;
+  width: 20vw;
+  height: 20vw;
+  background-image: url(../assets/icons/icon-hand.svg), url(../assets/circle_blue_touchscreen.png);
+  background-position: 40% 40%, center center;
+  background-size: 10%, contain;
+  background-repeat: no-repeat;
+  z-index: 90;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.about .idle-logo .idle-text {
+  background: none;
+  position: fixed;
+  display: flex;
+  font-size: 1.2vw;
+  line-height: 1.3vw;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  top: 7vw;
+  text-align: right;
+  left: 90vw;
+  width: 8vw;
+  height: 20vw;
+  z-index: 90;
+}
+
 /* -------------------------------------------------------- */
 
 .static-map-wrapper,
@@ -845,6 +925,20 @@ export default {
   transition: all ease 2000ms;
 }
 
+.logo-camera {
+  background-image: url(../assets/camera_di_commercio_logo_white.svg);
+  width: 20vw;
+  height: 3vw;
+  max-height: 8.5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 10;
+  bottom: .75vw;
+  left: 1.5vw;
+  transition: all ease 2000ms;
+}
+
 .gradient-mediterranean {
   position: fixed;
   top: 0;
@@ -867,12 +961,30 @@ export default {
 .gradient-mediterranean h2 {
   font-size: 2vw;
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
+  line-height: 2vw;
   position: absolute;
-  top: 4vw;
+  top: 2vw;
   z-index: 1;
-  right: 8vw;
+  right: 4vw;
+  text-align: right;
 }
+
+.gradient-mediterranean h2::after {
+  content: '';
+  bottom: -1vw;
+  right: 0;
+  position: absolute;
+  width: 3vw;
+  height: .5vw;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.gradient-mediterranean h2.feeder::after { background-image: url(../assets/linea_gialla_feeder.svg); }
+.gradient-mediterranean h2.dmm::after { background-image: url(../assets/linea_grigia_dmm.svg); }
+.gradient-mediterranean h2.roro::after { background-image: url(../assets/linea_verde_roro.svg); }
 
 .gradient-mediterranean img {
   position: relative;
@@ -881,5 +993,7 @@ export default {
   opacity: .8;
   height: 100%;
 }
+
+
 
 </style>

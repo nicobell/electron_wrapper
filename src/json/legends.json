@@ -76,12 +76,12 @@
             "symbol": "dotted-rect-thin"
         },
         "bac": {
-            "label": "Baltic Adriatic <br> Corridor",
+            "label": "Baltic-Adriatic <br> TEN-T Corridor",
             "color": "#ffe71a",
             "symbol": "thin-rect"
         },
         "mc": {
-            "label": "Mediterranean <br> Corridor",
+            "label": "Mediterranean <br> TEN-T Corridor",
             "color": "#f80",
             "symbol": "thin-rect"
         },

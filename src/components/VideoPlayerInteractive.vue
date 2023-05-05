@@ -10,14 +10,13 @@
         <button v-if="this.interactive" class="closevideo" @click="this.closevideo()"></button>
         <h2 v-if="this.interactive">{{ this.title }}</h2>
 
-        
         <InterGorizia v-if="this.interactive && this.id=='interporto_gorizia'" @update-video-index="this.updateVideo" />
         <InterCervignano v-if="this.interactive && this.id=='interporto_cervignano'" @update-video-index="this.updateVideo"/>
         <InterPordenone v-if="this.interactive && this.id=='interporto_pordenone'" @update-video-index="this.updateVideo"/>
         <PortoMonfalcone v-if="this.interactive && this.id=='porto_monfalcone'" @update-video-index="this.updateVideo"/>
         <PortoNogaro  v-if="this.interactive && this.id=='porto_nogaro'" @update-video-index="this.updateVideo" />
-        <FreeEste  v-if="this.interactive && this.id=='interporto_freeeste'" @update-video-index="this.updateVideo" />
-        <InterTrieste  v-if="this.interactive && this.id=='interporto_freeeste'" class="left" @update-video-index="this.updateVideo" />
+        <InterFreeEste  v-if="this.interactive && this.id=='interporto_freeeste'" @update-video-index="this.updateVideo" />
+        <PortoTrieste  v-if="this.interactive && this.id=='porto_trieste'" @update-video-index="this.updateVideo" />
 
     </div>
 </template>
@@ -26,13 +25,13 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-import FreeEste from './maps/FreeEste.vue'
+import InterFreeEste from './maps/InterFreeEste.vue'
 import InterCervignano from './maps/InterCervignano.vue'
 import InterGorizia from './maps/InterGorizia.vue'
 import InterPordenone from './maps/InterPordenone.vue'
-import InterTrieste from './maps/InterTrieste.vue'
 import PortoMonfalcone from './maps/PortoMonfalcone.vue'
 import PortoNogaro from './maps/PortoNogaro.vue'
+import PortoTrieste from './maps/PortoTrieste.vue'
 
 export default {
     name: "VideoPlayerInteractive",
@@ -43,13 +42,13 @@ export default {
         id: String
     },
     components: {
-        FreeEste,
+        InterFreeEste,
         InterCervignano,
         InterGorizia,
         InterPordenone,
-        InterTrieste,
         PortoNogaro,
-        PortoMonfalcone
+        PortoMonfalcone,
+        PortoTrieste
     },
     data() {
         return {
@@ -60,7 +59,8 @@ export default {
             distance: 50,
             videoindex: 0,
             controls: null,
-            animationRequestId: null
+            animationRequestId: null,
+            resetMap: ''
         }
     },
     computed: {
@@ -104,8 +104,8 @@ export default {
 
             this.$refs.video.loop = true
             this.$refs.video.crossOrigin = 'anonymous'
-            this.$refs.video.play()
-
+            this.$refs.video.currentTime = 1;
+            
             this.texture = new THREE.VideoTexture(this.$refs.video);
 
             this.material = new THREE.ShaderMaterial({
@@ -153,13 +153,10 @@ export default {
             this.controls.enableDamping = true
             this.controls.rotateSpeed = -0.25
             this.controls.panSpeed = -0.25
-
             this.controls.dampingFactor = 0.1
-
             this.controls.maxDistance = 1000
-            this.controls.minDistance = 10
-            console.log('ao')
-
+            this.controls.minDistance = 0
+            
             this.centerCamera()
 
             this.animate()
@@ -172,10 +169,19 @@ export default {
         this.createScene()
     },
     watch: {
+        interactive() {
+            if(this.interactive)
+                this.$refs.video.play()
+            else {
+                this.$refs.video.pause()
+                this.$refs.video.currentTime = 1
+            }
+        },
         activesrc() {
-            cancelAnimationFrame(this.animationRequestId)
-
             this.$refs.video.load()
+
+            cancelAnimationFrame(this.animationRequestId)
+            
             this.$refs.video.play()
             
             this.centerCamera()
@@ -206,7 +212,6 @@ export default {
     right: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(to right, #08253d 0%, transparent 50%, #08253d 100%), url(../assets/pattern_retina.png); */
     background-image: url(../assets/sfumatura_dark_dx.png);
     background-size: contain;
     background-position: right top;

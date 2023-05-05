@@ -12,9 +12,9 @@
       "title": "Direct Mediterranean Maritime Connections",
       "stateto": "dmm_connections",
       "color": "#86A0AC",
-      "x": 43,
-      "y": 72,
-      "style": "right"
+      "x": 42.8,
+      "y": 78,
+      "style": "topright"
     },
     "feeder_connections": {
       "title": "Feeder Connections",
@@ -417,7 +417,7 @@
       "style": "topleft"
     },
     "interporto_freeeste": {
-      "title": "Trieste Inland Terminal and Freeste",
+      "title": "Trieste Inland Terminal",
       "stateto": "interporto_freeeste",
       "color": "#1E85D9",
       "x": 78.3,
@@ -495,7 +495,7 @@
       "style": "topleft"
     },
     "interporto_freeeste_small": {
-      "title": "Trieste Inland Terminal and Freeste",
+      "title": "Trieste Inland Terminal",
       "stateto": "interporto_freeeste",
       "color": "#1E85D9",
       "x": 78.3,

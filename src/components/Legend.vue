@@ -54,13 +54,13 @@ export default {
 
 .legend-label:before {
     position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 28px solid transparent;
-    border-right: 11px solid black;
-    border-bottom: 28px solid transparent;
-    right: 111px;
+content: "";
+width: 0;
+height: 0;
+border-top: 28px solid transparent;
+border-right: 11px solid black;
+border-bottom: 28px solid transparent;
+right: 111px;
 }
 
 .legend-bar .tile {

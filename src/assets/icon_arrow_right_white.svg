@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-icon_arrow_right_white">
+      <rect width="28" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="icon_arrow_right_white" clip-path="url(#clip-icon_arrow_right_white)">
+    <path id="Tracciato_34803" data-name="Tracciato 34803" d="M0,0,8.147,8.147,16.295,0" transform="translate(17.59 22.147) rotate(-90)" fill="none" stroke="#fff" stroke-width="3"/>
+    <path id="Tracciato_35269" data-name="Tracciato 35269" d="M17348.055-6817h-24.018" transform="translate(-17324.037 6831)" fill="none" stroke="#fff" stroke-width="3"/>
+  </g>
+</svg>

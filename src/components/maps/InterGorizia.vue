@@ -8,6 +8,9 @@
 			<li @click="this.updateActiveIndex(4)">Item 5</li>
 		</ul>
 		<img src="../../assets/mappe/gorizia.png" alt="">
+
+		<button class="prev-spot" @click="this.prevSpot"></button>
+		<button class="next-spot" @click="this.nextSpot"></button>
 	</div>
 </template>
 
@@ -20,7 +23,11 @@ export default {
 			activeIndex: 0
 		}
     },
-    computed: {},
+    computed: {
+		numSpots() {
+			return document.querySelectorAll('#list li').length;
+		}
+	},
     methods: {
 		updateActiveIndex(index) {
 			const listItems = document.querySelectorAll('#list li');
@@ -31,6 +38,22 @@ export default {
 			this.activeIndex = index;
 
 			this.$emit('update-video-index', this.activeIndex)
+		},
+		nextSpot() {
+			if(this.activeIndex<this.numSpots-1)
+				this.activeIndex += 1
+			else
+				this.activeIndex = 0
+				
+			this.updateActiveIndex(this.activeIndex)
+		},
+		prevSpot() {
+			if(this.activeIndex==0)
+				this.activeIndex = this.numSpots-1
+			else
+				this.activeIndex -= 1
+
+			this.updateActiveIndex(this.activeIndex)
 		}
 	},
     mounted() {}

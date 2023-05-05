@@ -30,26 +30,18 @@
 			position: absolute;
 		}
 
-		li:nth-child(1) {     left: 43px;
-    top: 150px;}
-		li:nth-child(2) {     left: 100px;
-    top: 240px;}
-		li:nth-child(3) {     left: 143px;
-    top: 253px;}
-		li:nth-child(4) {     left: 164px;
-    top: 210px;}
-		li:nth-child(5) {     left: 149px;
-    top: 320px;}
-		li:nth-child(6) {     left: 189px;
-    top: 242px;}
-		li:nth-child(7) {     left: 380px;
-    top: 400px;}
-		li:nth-child(8) {         left: 280px;
-    top: 340px;}
-		li:nth-child(9) {     left: 60px;
-    top: 190px;}
-		li:nth-child(10) { left: 380px;
-    top: 320px;}
+
+		li:nth-child(1) {
+			left: 100px;
+			top: 240px;
+		}
+
+	
+
+		li:nth-child(2) {
+			left: 164px;
+			top: 210px;
+		}
 
 
 		ul {
@@ -59,15 +51,15 @@
 
 		@keyframes pin {
 			0% {
-				transform:scale3d(1,1,1)
+				transform: scale3d(1, 1, 1)
 			}
 
 			50% {
-				transform:scale3d(1.6,1.6,1.6)
+				transform: scale3d(1.6, 1.6, 1.6)
 			}
 
 			100% {
-				transform:scale3d(1,1,1)
+				transform: scale3d(1, 1, 1)
 			}
 		}
 	</style>
@@ -78,14 +70,6 @@
 		<ul id="list">
 			<li class="active">Item 1</li>
 			<li>Item 2</li>
-			<li>Item 3</li>
-			<li>Item 4</li>
-			<li>Item 5</li>
-			<li>Item 6</li>
-			<li>Item 7</li>
-			<li>Item 8</li>
-			<li>Item 9</li>
-			<li>Item 10</li>
 		</ul>
 		<img src="./monfalcone.png" alt="">
 	</div>
@@ -116,14 +100,12 @@
 			activeIndex = index;
 
 			// log the activeIndex to console
-			//console.log(`Active item index: ${activeIndex}`);
+			console.log(`Active item index: ${activeIndex}`);
 		}
 
-		if(externalIndex!=null){
+		if (externalIndex != null) {
 			updateActiveIndex(externalIndex);
 		}
-
-
 	</script>
 </body>
 

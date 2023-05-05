@@ -347,7 +347,7 @@
     {
       "id": "interporto_freeeste",
       "parent": "menu_fvg",
-      "title": "Trieste Inland Terminal and Freeste",
+      "title": "Trieste Inland Terminal",
       "videosrc": ["freeste1", "freeste2", "freeste3", "freeste4", "freeste5", "freeste6", "freeste7", "freeste8"],
       "zoom": 45,
       "x": 1500,

@@ -3,8 +3,10 @@
 		<ul id="list">
 			<li @click="this.updateActiveIndex(0)" class="active">Item 1</li>
 			<li @click="this.updateActiveIndex(1)">Item 2</li>
+			<li @click="this.updateActiveIndex(2)">Item 3</li>
+			<li @click="this.updateActiveIndex(3)">Item 4</li>
 		</ul>
-		<img src="../../assets/mappe/monfalcone.png" alt="">
+		<img src="../../assets/mappe/trieste-porto.jpg" alt="">
 
 		<button class="prev-spot" @click="this.prevSpot"></button>
 		<button class="next-spot" @click="this.nextSpot"></button>
@@ -13,7 +15,7 @@
 
 <script>
 export default {
-    name: 'InterPordenone',
+    name: 'PortoTrieste',
     props: {},
     data() {
         return {
@@ -59,12 +61,22 @@ export default {
 
 <style scoped>
 li:nth-child(1) {
-	left: 18.18%;
-	top: 43.63%;
+	left: 58.36%;
+	top: 65.45%;
 }
 
 li:nth-child(2) {
-	left: 29.81%;
-	top: 38.18%;
+	left: 67.81%;
+	top: 68%;
+}
+
+li:nth-child(3) {
+	left: 59.81%;
+	top: 58.90%;
+}
+
+li:nth-child(4) {
+	left: 63.27%;
+	top: 51.63%;
 }
 </style>

@@ -264,7 +264,7 @@ export default {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .pattern::after {

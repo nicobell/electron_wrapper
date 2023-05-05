@@ -12,8 +12,8 @@
       "title": "Direct Mediterranean Maritime Connections",
       "stateto": "dmm_connections",
       "color": "#86A0AC",
-      "x": 43.5,
-      "y": 79,
+      "x": 43,
+      "y": 72,
       "style": "right"
     },
     "feeder_connections": {
@@ -152,7 +152,7 @@
       "y": 21.3,
       "style": "topright"
     },
-    "rjeka": {
+    "rijeka": {
       "title": "Rijeka",
       "stateto": "",
       "color": "#1E85D9",
@@ -604,8 +604,8 @@
       "y": 57.5,
       "style": "right"
     },
-    "shangai": {
-      "title": "Shangai",
+    "shanghai": {
+      "title": "Shanghai",
       "stateto": "",
       "color": "#EB503F",
       "x": 80.9,

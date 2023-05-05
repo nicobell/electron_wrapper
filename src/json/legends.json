@@ -5,6 +5,11 @@
             "color": "#ffffff",
             "symbol": "square"
         },
+        "ditc2": {
+            "label": "Direct Inland <br> Terminal Connections",
+            "color": "#ffffff",
+            "symbol": "circle"
+        },
         "dimc": {
             "label": "Direct Intercontinental <br> Maritime Connections",
             "color": "#D65C4E",
@@ -77,7 +82,7 @@
         },
         "mc": {
             "label": "Mediterranean <br> Corridor",
-            "color": "#6b9bd2",
+            "color": "#f80",
             "symbol": "thin-rect"
         },
         "lh": {

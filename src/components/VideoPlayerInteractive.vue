@@ -5,7 +5,6 @@
 
         <video ref="video" id="video" loop muted crossOrigin="anonymous" playsinline style="display:none">
 			<source :src="`videos/`+this.activesrc+'.mp4'">
-            <!-- ${publicFolderPath} -->
 		</video>
 
         <button v-if="this.interactive" class="closevideo" @click="this.closevideo()"></button>
@@ -13,18 +12,19 @@
 
         
         <InterGorizia v-if="this.interactive && this.id=='interporto_gorizia'" @update-video-index="this.updateVideo" />
-        <InterCervignano v-if="this.interactive && this.id=='interporto_cervignano'"/>
-        <InterPordenone v-if="this.interactive && this.id=='interporto_pordenone'"/>
-        <PortoMonfalcone v-if="this.interactive && this.id=='porto_monfalcone'"/>
-        <PortoNogaro  v-if="this.interactive && this.id=='porto_nogaro'"/>
-        <FreeEste  v-if="this.interactive && this.id=='interporto_freeeste'" />
-        <InterTrieste  v-if="this.interactive && this.id=='interporto_freeeste'" class="left" />
+        <InterCervignano v-if="this.interactive && this.id=='interporto_cervignano'" @update-video-index="this.updateVideo"/>
+        <InterPordenone v-if="this.interactive && this.id=='interporto_pordenone'" @update-video-index="this.updateVideo"/>
+        <PortoMonfalcone v-if="this.interactive && this.id=='porto_monfalcone'" @update-video-index="this.updateVideo"/>
+        <PortoNogaro  v-if="this.interactive && this.id=='porto_nogaro'" @update-video-index="this.updateVideo" />
+        <FreeEste  v-if="this.interactive && this.id=='interporto_freeeste'" @update-video-index="this.updateVideo" />
+        <InterTrieste  v-if="this.interactive && this.id=='interporto_freeeste'" class="left" @update-video-index="this.updateVideo" />
 
     </div>
 </template>
 
 <script>
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 import FreeEste from './maps/FreeEste.vue'
 import InterCervignano from './maps/InterCervignano.vue'
@@ -58,7 +58,8 @@ export default {
             phi: 0,
             theta: 0,
             distance: 50,
-            videoindex: 0
+            videoindex: 0,
+            controls: null
         }
     },
     computed: {
@@ -106,9 +107,38 @@ export default {
             this.$refs.video.play()
 
             this.texture = new THREE.VideoTexture(this.$refs.video);
-            this.texture.colorSpace = THREE.SRGBColorSpace;
+            
+            //peggiora performance ????
+            //this.texture.encoding = THREE.sRGBEncoding;
 
-            this.material = new THREE.MeshBasicMaterial({map: this.texture});
+            this.material = new THREE.ShaderMaterial({
+                uniforms: {
+                    uTexture: { value: this.texture }
+                },
+                vertexShader: `
+                    varying vec2 vUv;
+
+                    void main() {
+                        vUv = uv;
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform sampler2D uTexture;
+                    varying vec2 vUv;
+
+                    void main() {
+                        vec4 texelColor = texture(uTexture, vUv);
+                        // sRGB to linear conversion
+                        texelColor.xyz = pow(texelColor.xyz, vec3(2.2));
+                        // Linear to gamma conversion
+                        texelColor.xyz = pow(texelColor.xyz, vec3(1.0/2.2));
+                        gl_FragColor = texelColor;
+                    }
+                `
+            });
+
+            //this.material = new THREE.MeshBasicMaterial({map: this.texture});
             this.mesh = new THREE.Mesh(geometry, this.material);
 
             this.scene.add(this.mesh);
@@ -116,13 +146,12 @@ export default {
             this.renderer = new THREE.WebGLRenderer();
             this.renderer.setPixelRatio(window.devicePixelRatio);
             this.renderer.setSize(window.innerWidth, window.innerHeight);
-            this.renderer.gammaFactor = 2.2;
             
             this.$refs.player.appendChild(this.renderer.domElement);
 
             let vs = this
 
-            let touchX, mouseX;
+            /* let touchX, mouseX;
             this.$refs.player.addEventListener('touchstart', e => {
                 touchX = e.touches[0].clientX;
             });
@@ -144,12 +173,72 @@ export default {
                 let deltaX = e.clientX - mouseX;
                 vs.camera.rotation.y += deltaX * 0.002;
                 mouseX = e.clientX;
-            };
+            }; */
+
+            // Create a new OrbitControls object and pass in the camera and renderer
+            this.controls = new OrbitControls(vs.camera, vs.renderer.domElement)
+
+            // Disable auto rotation and enable damping
+            this.controls.autoRotate = false
+            this.controls.enableDamping = true
+
+            // Set the damping factor
+            this.controls.dampingFactor = 0.1
+
+            // Set the maximum distance and minimum distance of the camera from the scene
+            this.controls.maxDistance = 1000
+            this.controls.minDistance = 10
+
+            this.$refs.player.addEventListener('mousedown', () => {
+                /* mouseX = e.clientX;
+                mouseY = e.clientY; */
+                this.$refs.player.addEventListener('mousemove', this.onDocumentMouseMove);
+            });
+            this.$refs.player.addEventListener('mouseup', () => {
+                this.$refs.player.removeEventListener('mousemove', this.onDocumentMouseMove);
+            });
+
+            this.$refs.player.addEventListener('touchstart', () => {
+            });
+            this.$refs.player.addEventListener('touchmove', () => {
+                this.$refs.player.removeEventListener('mousemove', this.onDocumentMouseMove);
+            });
+
+            // Add an event listener for when the mouse is moved
+            //this.renderer.domElement.addEventListener('mousemove', onDocumentMouseMove, false)
+
+            // Define the onDocumentMouseMove function
 
             this.centerCamera()
 
             this.animate()
-        }   
+        },
+        onDocumentMouseMove(event) {
+            // Calculate the mouse position relative to the canvas
+            let mouseX = (event.clientX / window.innerWidth) * 2 - 1
+            let mouseY = -(event.clientY / window.innerHeight) * 2 + 1
+
+            // Set the rotation angles based on the mouse position
+            let rotationX = mouseY * Math.PI / 2
+            let rotationY = mouseX * Math.PI / 2
+
+            // Create a new Quaternion object
+            let quaternion = new THREE.Quaternion()
+
+            // Calculate the rotation using the Quaternion object
+            quaternion.setFromEuler(new THREE.Euler(
+                THREE.MathUtils.degToRad(-rotationX * -1),
+                THREE.MathUtils.degToRad(-rotationY * -1),
+                0,
+                'XYZ'
+            ))
+
+            // Apply the rotation to the camera
+            this.camera.quaternion.copy(quaternion)
+
+            // Update the controls
+            this.controls.update()
+        }
     },
     mounted() {
         this.createScene()

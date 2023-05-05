@@ -11,20 +11,6 @@
     transition: transform ease 800ms;
 }
 
-.info-grid::after {
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    position: absolute;
-    z-index: 0;
-    background-image: url(../assets/sfumatura_dark_sx.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left top;
-}
 
 .info-grid.show {
     transform: translateX(0);

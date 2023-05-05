@@ -52,6 +52,17 @@ export default {
     justify-content: center;
 }
 
+.legend-label:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-right: 11px solid black;
+    border-bottom: 28px solid transparent;
+    right: 111px;
+}
+
 .legend-bar .tile {
     display: flex;
     flex-direction: row;
@@ -59,6 +70,11 @@ export default {
     background-color: rgba(0, 0, 0, .4);
     padding: .75vw 1.2vw;
     border-right: 1px solid grey;
+}
+
+.legend-bar .tile:nth-child(2){
+    border-right: 0px solid grey;
+    padding: .75vw 1.6vw .75vw 1.2vw;
 }
 
 .legend-bar .tile .symbol {

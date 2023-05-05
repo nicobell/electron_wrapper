@@ -24,7 +24,7 @@
 
           <div :class="['num', entry.icon]" v-html="entry.num"></div>
           <div class="labels">
-            <span class="label">{{ entry.label }}</span>
+            <span class="label" v-html="entry.label" ></span>
             <span v-if="entry.sublabel" class="small-label">{{ entry.sublabel }}</span>
           </div>
 
@@ -55,7 +55,21 @@
     </div>
 
     <div class="idle">
-      <div class="idle-text">TOUCH THE SCREEN</div>
+      <div class="idle-text">Touch to explore</div>
+      <img class="icon-hand" src="../assets/icons/icon-hand.svg" width="31px" height="36px">
+      <div class="idle-hand-animation"></div>
+    </div>
+
+    <div v-if="this.currentState.parent=='menu_mediterranean'" class="gradient-mediterranean">
+      <img v-if="this.currentId=='dmm_connections'" src="../assets/gradient-grey.png" alt="">
+      <h2 v-if="this.currentId=='dmm_connections'">Direct Nediterranean <br> Maritime Connections</h2>
+
+      <img v-if="this.currentId=='roro_connections'" src="../assets/gradient-light-blue.png" alt="">
+      <h2 v-if="this.currentId=='roro_connections'">RoRo Connections</h2>
+
+      <img v-if="this.currentId=='feeder_connections'" src="../assets/gradient-yellow.png" alt="">
+      <h2 v-if="this.currentId=='feeder_connections'">Feeder Connections</h2>
+
     </div>
 
     <!-- //////////////////// 360 VIDEOPLAYER //////////////////// -->
@@ -74,7 +88,7 @@
       <template v-for="(step, index) in this.steps" :key="'button_step' + index">
       
         <button v-if="this.recursiveParent == step && step != this.currentId"
-          @click="this.zoomToState(this.recursiveParent)"
+          @click="this.zoomToState(this.currentState.parent)"
           class="backbutton">
           <span>Back</span>
         </button>
@@ -283,7 +297,8 @@
         :state="this.currentState" />
 
       <!-- //////////////////// LEGEND COMPONENT //////////////////// -->
-      <Legend v-if="this.legends" :legenddata="this.legends" :tiles="this.dynamicLegend"/>
+      <Legend v-if="this.legends && this.currentState.parent!='menu_mediterranean' && this.currentState.parent!='menu_fvg'" 
+        :legenddata="this.legends" :tiles="this.dynamicLegend"/>
 
     </div>
 
@@ -291,16 +306,16 @@
 </template>
 
 <script>
+/* greensock animation library + plugin */
+import gsap from 'gsap';
+//import { DrawSVGPlugin } from "../libs/DrawSVGPlugin"
+import { CustomEase } from "gsap/CustomEase"
+
 import statesJSON from '../json/states.json'
 import labelsJSON  from '../json/labels.json'
 import spotsJSON from '../json/spots.json'
 import legendsJSON from '../json/legends.json'
 import tablesJSON from '../json/tables.json'
-
-/* greensock animation library + plugin */
-import gsap from 'gsap';
-//import { DrawSVGPlugin } from "../libs/DrawSVGPlugin"
-import { CustomEase } from "gsap/CustomEase"
 
 /* interactive and graphic components */
 import Legend from '../components/Legend.vue'
@@ -452,10 +467,10 @@ export default {
         tiles = ['ditc', 'roro', 'feeder', 'dimc', 'dmmc']
       
       if(this.currentId == "menu_europe")
-        tiles = ['train16plus', 'train816', 'train08', 'ditc']
+        tiles = ['train16plus', 'train816', 'train08']
       
       if(this.recursiveParent == "menu_europe" && this.currentId != "menu_europe")
-        tiles = ['rwv', 'rwnv', 'train16plus', 'train816', 'train08', 'ditc', 'oc']
+        tiles = ['rwv', 'rwnv', 'train16plus', 'train816', 'train08', 'ditc2', 'oc']
 
       if(this.currentId == "menu_fvg")
         tiles = ['rc', 'hc', 'lh', 'bac', 'mc']
@@ -641,7 +656,7 @@ export default {
       }, 120000);
     }
   },
-  async mounted() {
+  mounted() {
     /* await fetch('/json/states.json')
       .then(res => res.json())
       .then(json => { this.states = json.states })
@@ -662,13 +677,13 @@ export default {
       .then(res => res.json())
       .then(json => { this.spots = json.spots }) */
 
+    gsap.registerPlugin(CustomEase);
+
     this.states = statesJSON.states
     this.labels = labelsJSON.labels
     this.tables = tablesJSON.tables
     this.legends = legendsJSON.legends
     this.spots = spotsJSON.spots
-
-    gsap.registerPlugin(CustomEase);
     
     setTimeout(() => {
       this.showLabels = true
@@ -689,11 +704,31 @@ export default {
       this.resetIdle()
       this.setupIdle()
     })
+
+    window.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
   }
 }
 </script>
 
 <style>
+
+
+.about::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    background-image: url(../assets/sfumatura_dark_sx.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+}
 
 .about .idle {
   opacity: 0;
@@ -712,9 +747,46 @@ export default {
   cursor: pointer;
 }
 
+.about .idle .idle-hand-animation {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 550px;
+  transform-origin: center;
+  transform: scale3d(0.21,0.21,0.21);
+  background: #fff;
+  opacity: 0.2;
+  animation: loopIdle 0.8s cubic-bezier(0.34, 0.12, 0.9, 0.59) infinite;
+  top: 72%;
+  left: 44.3%;
+}
+
+@keyframes loopIdle {
+  from { 
+    opacity: 0.2;
+    transform: scale3d(0.21,0.21,0.21);
+   }
+  to {
+    opacity: 0;
+    transform: scale3d(1.3,1.3,1.3);
+  }
+}
+
+.about .idle .icon-hand {
+  position: absolute;
+  bottom: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2vw;
+  color: #fff;
+  font-weight: 300;
+  width: 60px;
+  height: 100px;
+}
+
 .about .idle .idle-text {
   position: absolute;
-  bottom: 12%;
+  bottom: 6%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2vw;
@@ -771,6 +843,43 @@ export default {
   max-height: 11.5vw;
   height: 100%;
   transition: all ease 2000ms;
+}
+
+.gradient-mediterranean {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.gradient-mediterranean h2 {
+  font-size: 2vw;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  top: 4vw;
+  z-index: 1;
+  right: 8vw;
+}
+
+.gradient-mediterranean img {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  opacity: .8;
+  height: 100%;
 }
 
 </style>

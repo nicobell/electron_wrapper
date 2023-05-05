@@ -48,7 +48,7 @@
     </g>
 
 
-    <g v-show="this.stateId=='dmm_connections'" class="linea" id="L_2">
+    <!-- <g v-show="this.stateId=='dmm_connections'" class="linea" id="L_2">
       <path mask="url(#L_2_mmask)" class="cls-1" d="m946.73,517.83l-5.01,5.01" />
       <mask id="L_2_mmask" maskUnits="userSpaceOnUse"> 
         <path id="L_2_mask" class="cls-1" d="m946.73,517.83l-5.01,5.01" />
@@ -57,7 +57,7 @@
     <g class="punto" id="P_2">
       <circle class="cls-4" cx="946.73" cy="517.66" r="1" />
       <circle class="cls-5" cx="946.73" cy="517.66" r=".4" />
-    </g>
+    </g> -->
 
 
     <g v-show="this.stateId=='dmm_connections'" class="linea" id="L_3">

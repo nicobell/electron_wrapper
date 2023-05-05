@@ -28,7 +28,7 @@
           "sublabel": "PER YEAR",
           "icon": "vehicle"
         }, {
-          "num": "860.000",
+          "num": "880.000",
           "label": "TEUs imported/exported",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -70,19 +70,19 @@
           "label": "Direct Mediterranean Maritime Connections",
           "icon": "maritime"
         }, {
-          "num": "860.000",
+          "num": "880.000",
           "label": "TEUs imported/exported",
           "sublabel": "PER YEAR",
           "icon": "teu",
           "subdata": [
             {
-              "num": "373.000",
+              "num": "580.000",
               "label": "from/to Asian Ports"
             }, {
-              "num": "143.000",
+              "num": "150.000",
               "label": "from/to Italian Ports"
             }, {
-              "num": "344.000",
+              "num": "150.000",
               "label": "from/to other Mediterranean Ports"
             }
           ]
@@ -156,7 +156,7 @@
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "30.000",
+          "num": "10.000",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -188,7 +188,7 @@
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "4.500",
+          "num": "0",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -220,7 +220,7 @@
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "48.000",
+          "num": "40.000",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -247,12 +247,12 @@
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "-",
+          "num": "0",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "-",
+          "num": "0",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -279,12 +279,12 @@
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "70.000",
+          "num": "68.500",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "18.000",
+          "num": "0",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -316,7 +316,7 @@
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "15.000",
+          "num": "0",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -348,7 +348,7 @@
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "8.600",
+          "num": "15.900",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -375,12 +375,12 @@
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "-",
+          "num": "0",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "-",
+          "num": "0",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -412,7 +412,7 @@
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "9.300",
+          "num": "0",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -439,12 +439,12 @@
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "1.500",
+          "num": "1.400",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "400",
+          "num": "0",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -1216,7 +1216,7 @@
           "icon": ""
         }, {
           "num": "+1,000,000<span>tons</span>",
-          "label": "General goods moved in 2022",
+          "label": "General goods<br> moved in 2022",
           "sublabel": "",
           "icon": ""
         }, {

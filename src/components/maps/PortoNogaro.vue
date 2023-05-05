@@ -6,7 +6,7 @@
 			<li @click="this.updateActiveIndex(2)">Item 3</li>
 			<li @click="this.updateActiveIndex(3)">Item 4</li>
 			<li @click="this.updateActiveIndex(4)">Item 5</li>
-			<!-- <li>Item 6</li> -->
+			<li @click="this.updateActiveIndex(5)">Item 6</li>
 		</ul>
 		<img src="../../assets/mappe/nogaro.png" alt="">
 	</div>

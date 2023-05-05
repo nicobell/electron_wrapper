@@ -1,16 +1,16 @@
 <template>
 	<div class="videomap container">
 		<ul id="list">
-			<li class="active">Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-			<li>Item 4</li>
-			<li>Item 5</li>
-			<li>Item 6</li>
-			<li>Item 7</li>
-			<li>Item 8</li>
-			<li>Item 9</li>
-			<li>Item 10</li>
+			<li @click="this.updateActiveIndex(0)" class="active">Item 1</li>
+			<li @click="this.updateActiveIndex(1)">Item 2</li>
+			<li @click="this.updateActiveIndex(2)">Item 3</li>
+			<li @click="this.updateActiveIndex(3)">Item 4</li>
+			<li @click="this.updateActiveIndex(4)">Item 5</li>
+			<li @click="this.updateActiveIndex(5)">Item 6</li>
+			<li @click="this.updateActiveIndex(6)">Item 7</li>
+			<li @click="this.updateActiveIndex(7)">Item 8</li>
+			<li @click="this.updateActiveIndex(8)">Item 9</li>
+			<li @click="this.updateActiveIndex(9)">Item 10</li>
 		</ul>
 		<img src="../../assets/mappe/monfalcone.png" alt="">
 	</div>

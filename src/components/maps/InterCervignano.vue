@@ -1,13 +1,13 @@
 <template>
 	<div class="videomap container">
 		<ul id="list">
-			<li class="active">Item 1</li>
-			<li>Item 2</li>
-			<li style="background-color: red;">Item 3</li>
-			<li>Item 4</li>
-			<li>Item 5</li>
-			<li>Item 6</li>
-			<li style="background-color: red;">Item 3-2</li>
+			<li @click="this.updateActiveIndex(0)" class="active">Item 1</li>
+			<li @click="this.updateActiveIndex(1)">Item 2</li>
+			<li @click="this.updateActiveIndex(2)" style="background-color: red;">Item 3</li>
+			<li @click="this.updateActiveIndex(3)">Item 4</li>
+			<li @click="this.updateActiveIndex(4)">Item 5</li>
+			<li @click="this.updateActiveIndex(5)">Item 6</li>
+			<li @click="this.updateActiveIndex(6)" style="background-color: red;">Item 3-2</li>
 		</ul>
 		<img src="../../assets/mappe/cervignano.png" alt="">
 	</div>

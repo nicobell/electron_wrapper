@@ -3,7 +3,7 @@
         <div :class="{'pattern': !this.interactive, 'primopiano': this.interactive}" 
             id="videomain" ref="player"></div>
 
-        <video ref="video" id="video" loop muted crossOrigin="anonymous" playsinline style="display:none">
+        <video ref="video" id="video" loop crossOrigin="anonymous" playsinline style="display:none">
 			<source :src="`videos/`+this.activesrc+'.mp4'">
 		</video>
 
@@ -59,7 +59,8 @@ export default {
             theta: 0,
             distance: 50,
             videoindex: 0,
-            controls: null
+            controls: null,
+            animationRequestId: null
         }
     },
     computed: {
@@ -88,7 +89,7 @@ export default {
             this.renderer.render(this.scene, this.camera)
         },
         animate() {
-            requestAnimationFrame(this.animate.bind(this))
+            this.animationRequestId = requestAnimationFrame(this.animate.bind(this))
             this.renderer.render(this.scene, this.camera)
         },
         createScene() {
@@ -101,15 +102,11 @@ export default {
             const geometry = new THREE.SphereGeometry(500, 60, 40);
             geometry.scale(-1, 1, 1);
 
-            this.$refs.video.muted = true
             this.$refs.video.loop = true
             this.$refs.video.crossOrigin = 'anonymous'
             this.$refs.video.play()
 
             this.texture = new THREE.VideoTexture(this.$refs.video);
-            
-            //peggiora performance ????
-            //this.texture.encoding = THREE.sRGBEncoding;
 
             this.material = new THREE.ShaderMaterial({
                 uniforms: {
@@ -138,7 +135,6 @@ export default {
                 `
             });
 
-            //this.material = new THREE.MeshBasicMaterial({map: this.texture});
             this.mesh = new THREE.Mesh(geometry, this.material);
 
             this.scene.add(this.mesh);
@@ -151,103 +147,39 @@ export default {
 
             let vs = this
 
-            /* let touchX, mouseX;
-            this.$refs.player.addEventListener('touchstart', e => {
-                touchX = e.touches[0].clientX;
-            });
-            this.$refs.player.addEventListener('touchmove', e => {
-                let deltaX = e.touches[0].clientX - touchX;
-                vs.camera.rotation.y += deltaX * 0.002;
-                touchX = e.touches[0].clientX;
-            });
-
-            this.$refs.player.addEventListener('mousedown', e => {
-                mouseX = e.clientX;
-                this.$refs.player.addEventListener('mousemove', onMouseMove);
-            });
-            this.$refs.player.addEventListener('mouseup', e => {
-                this.$refs.player.removeEventListener('mousemove', onMouseMove);
-            });
-
-            let onMouseMove = e => {
-                let deltaX = e.clientX - mouseX;
-                vs.camera.rotation.y += deltaX * 0.002;
-                mouseX = e.clientX;
-            }; */
-
-            // Create a new OrbitControls object and pass in the camera and renderer
             this.controls = new OrbitControls(vs.camera, vs.renderer.domElement)
 
-            // Disable auto rotation and enable damping
             this.controls.autoRotate = false
             this.controls.enableDamping = true
+            this.controls.rotateSpeed = -0.25
+            this.controls.panSpeed = -0.25
 
-            // Set the damping factor
             this.controls.dampingFactor = 0.1
 
-            // Set the maximum distance and minimum distance of the camera from the scene
             this.controls.maxDistance = 1000
             this.controls.minDistance = 10
-
-            this.$refs.player.addEventListener('mousedown', () => {
-                /* mouseX = e.clientX;
-                mouseY = e.clientY; */
-                this.$refs.player.addEventListener('mousemove', this.onDocumentMouseMove);
-            });
-            this.$refs.player.addEventListener('mouseup', () => {
-                this.$refs.player.removeEventListener('mousemove', this.onDocumentMouseMove);
-            });
-
-            this.$refs.player.addEventListener('touchstart', () => {
-            });
-            this.$refs.player.addEventListener('touchmove', () => {
-                this.$refs.player.removeEventListener('mousemove', this.onDocumentMouseMove);
-            });
-
-            // Add an event listener for when the mouse is moved
-            //this.renderer.domElement.addEventListener('mousemove', onDocumentMouseMove, false)
-
-            // Define the onDocumentMouseMove function
+            console.log('ao')
 
             this.centerCamera()
 
             this.animate()
         },
-        onDocumentMouseMove(event) {
-            // Calculate the mouse position relative to the canvas
-            let mouseX = (event.clientX / window.innerWidth) * 2 - 1
-            let mouseY = -(event.clientY / window.innerHeight) * 2 + 1
-
-            // Set the rotation angles based on the mouse position
-            let rotationX = mouseY * Math.PI / 2
-            let rotationY = mouseX * Math.PI / 2
-
-            // Create a new Quaternion object
-            let quaternion = new THREE.Quaternion()
-
-            // Calculate the rotation using the Quaternion object
-            quaternion.setFromEuler(new THREE.Euler(
-                THREE.MathUtils.degToRad(-rotationX * -1),
-                THREE.MathUtils.degToRad(-rotationY * -1),
-                0,
-                'XYZ'
-            ))
-
-            // Apply the rotation to the camera
-            this.camera.quaternion.copy(quaternion)
-
-            // Update the controls
-            this.controls.update()
-        }
+    },
+    unmounted() {
+        cancelAnimationFrame(this.animationRequestId)
     },
     mounted() {
         this.createScene()
     },
     watch: {
         activesrc() {
+            cancelAnimationFrame(this.animationRequestId)
+
             this.$refs.video.load()
             this.$refs.video.play()
+            
             this.centerCamera()
+            this.animate()
         }
     }
 }

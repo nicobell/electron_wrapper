@@ -1,11 +1,11 @@
 <template>
 	<div class="videomap container">
 		<ul id="list">
-			<li class="active">Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-			<li>Item 4</li>
-			<li>Item 4</li>
+			<li @click="this.updateActiveIndex(0)" class="active">Item 1</li>
+			<li @click="this.updateActiveIndex(1)">Item 2</li>
+			<li @click="this.updateActiveIndex(2)">Item 3</li>
+			<li @click="this.updateActiveIndex(3)">Item 4</li>
+			<li @click="this.updateActiveIndex(4)">Item 5</li>
 		</ul>
 		<img src="../../assets/mappe/pordenone.png" alt="">
 	</div>

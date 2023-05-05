@@ -5,10 +5,10 @@
 			<li style="display: none;">hidden</li>
 			<li style="display: none;">hidden</li>
 			<li style="display: none;">hidden</li>
-			<li>Item 5</li>
-			<li>Item 6</li>
-			<li>Item 7</li>
-			<li>Item 8</li>
+			<li @click="this.updateActiveIndex(0)">Item 5</li>
+			<li @click="this.updateActiveIndex(1)">Item 6</li>
+			<li @click="this.updateActiveIndex(2)">Item 7</li>
+			<li @click="this.updateActiveIndex(3)">Item 8</li>
 		</ul>
 		<img src="../../assets/mappe/trieste-freeste-terminal.png" alt="">
 	</div>

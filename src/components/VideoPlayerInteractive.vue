@@ -106,6 +106,8 @@ export default {
             this.$refs.video.play()
 
             this.texture = new THREE.VideoTexture(this.$refs.video);
+            this.texture.colorSpace = THREE.SRGBColorSpace;
+
             this.material = new THREE.MeshBasicMaterial({map: this.texture});
             this.mesh = new THREE.Mesh(geometry, this.material);
 

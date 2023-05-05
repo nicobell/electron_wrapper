@@ -144,7 +144,8 @@
       <div v-for="(spot, index) in this.currentState.labels" :key="'friuli_porti_' + index"
         :class="['spot', 
           this.getSpot(spot).icon, this.currentState.parent=='menu_fvg' ? 'small-spot' : '', 
-          this.getSpot(spot).stateto==this.currentState.id ? 'active' : '' ]"
+          this.getSpot(spot).stateto==this.currentState.id ? 'active' : '',
+          this.interactivevideo ? '' : 'animate' ]"
         :style="
           'top: ' + this.getSpot(spot).y + 'vh;' +
           'left: ' + this.getSpot(spot).x + 'vw;' +

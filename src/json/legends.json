@@ -63,7 +63,7 @@
         "oc": {
             "label": "Other <br> Connections",
             "color": "#275164",
-            "symbol": "circle"
+            "symbol": "circle-other"
         },
         "rc": {
             "label": "Railway <br> Connections",

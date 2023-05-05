@@ -61,8 +61,8 @@ export default {
 
 <style scoped>
 li:nth-child(1) {
-	left: 58.36%;
-	top: 65.45%;
+	left: 58%;
+	top: 66%;
 }
 
 li:nth-child(2) {

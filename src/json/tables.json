@@ -18,22 +18,22 @@
           "label": "Direct Railway Connections to European Inland Terminals",
           "icon": "railway"
         }, {
-          "num": "10.000",
+          "num": "10,000",
           "label": "Trains from/to European Inland Terminals",
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "330.000",
+          "num": "330,000",
           "label": "Intermodal Transport Unit (ITU) imported/exported",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
         }, {
-          "num": "880.000",
+          "num": "880,000",
           "label": "TEUs imported/exported",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "60.000.000",
+          "num": "60,000,000",
           "label": "Tons imported/exported",
           "sublabel": "PER YEAR",
           "icon": "tons"
@@ -70,19 +70,19 @@
           "label": "Direct Mediterranean Maritime Connections",
           "icon": "maritime"
         }, {
-          "num": "880.000",
+          "num": "880,000",
           "label": "TEUs imported/exported",
           "sublabel": "PER YEAR",
           "icon": "teu",
           "subdata": [
             {
-              "num": "500.000",
+              "num": "500,000",
               "label": "from/to Asian Ports and rest of the world"
             }, {
-              "num": "230.000",
+              "num": "230,000",
               "label": "from/to Italian feeder Ports"
             }, {
-              "num": "150.000",
+              "num": "150,000",
               "label": "from/to other Mediterranean Ports"
             }
           ]
@@ -92,7 +92,7 @@
           "sublabel": "PER YEAR",
           "icon": "ferry"
         }, {
-          "num": "340.000",
+          "num": "340,000",
           "label": "Intermodal Transport Unit (ITU) imported/exported",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -114,17 +114,17 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "10.000",
+          "num": "10,000",
           "label": "Trains from/to European Inland Terminals",
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "290.000",
+          "num": "290,000",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "70.000",
+          "num": "70,000",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -146,17 +146,17 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "1.600",
+          "num": "1,600",
           "label": "Trains from/to Austria Inland Terminals",
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "60.000",
+          "num": "60,000",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "10.000",
+          "num": "10,000",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -183,7 +183,7 @@
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "16.000",
+          "num": "16,000",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -210,17 +210,17 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "3.400",
+          "num": "3,400",
           "label": "Trains from/to Germany Inland Terminals",
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "80.000",
+          "num": "80,000",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "40.000",
+          "num": "40,000",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -279,7 +279,7 @@
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "68.500",
+          "num": "68,500",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -306,12 +306,12 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "1.800",
+          "num": "1,800",
           "label": "Trains from/to Italian Inland Terminals",
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "32.000",
+          "num": "32,000",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -348,7 +348,7 @@
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "15.900",
+          "num": "15,900",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -407,7 +407,7 @@
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "33.000",
+          "num": "33,000",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -439,7 +439,7 @@
           "sublabel": "PER YEAR",
           "icon": "train"
         }, {
-          "num": "1.400",
+          "num": "1,400",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -461,7 +461,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "6.400",
+          "num": "6,400",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -505,7 +505,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "14.300",
+          "num": "14,300",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -527,12 +527,12 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "22.500",
+          "num": "22,500",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "9.300",
+          "num": "9,300",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -571,7 +571,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "10.200",
+          "num": "10,200",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -593,7 +593,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "4.500",
+          "num": "4,500",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -615,7 +615,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "1.500",
+          "num": "1,500",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -637,7 +637,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "16.000",
+          "num": "16,000",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -659,7 +659,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "2.200",
+          "num": "2,200",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -681,7 +681,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "8.500",
+          "num": "8,500",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -703,12 +703,12 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "1.100",
+          "num": "1,100",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "13.100",
+          "num": "13,100",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -725,12 +725,12 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "30.500",
+          "num": "30,500",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "24.500",
+          "num": "24,500",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -747,7 +747,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "36.300",
+          "num": "36,300",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -769,12 +769,12 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "1.000",
+          "num": "1,000",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "1.200",
+          "num": "1,200",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -813,7 +813,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "68.500",
+          "num": "68,500",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -835,7 +835,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "2.200",
+          "num": "2,200",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -857,7 +857,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "1.100",
+          "num": "1,100",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -879,7 +879,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "12.300",
+          "num": "12,300",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -901,7 +901,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "15.800",
+          "num": "15,800",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -994,7 +994,7 @@
           "sublabel": "PER YEAR",
           "icon": "teu"
         }, {
-          "num": "15.900",
+          "num": "15,900",
           "label": "Intermodal Transport Unit (ITU) via Railway",
           "sublabel": "PER YEAR",
           "icon": "vehicle"
@@ -1033,7 +1033,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "7.100",
+          "num": "7,100",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -1055,7 +1055,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "1.700",
+          "num": "1,700",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -1077,7 +1077,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "23.600",
+          "num": "23,600",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -1099,7 +1099,7 @@
           "sublabel": "PER WEEK",
           "icon": "train"
         }, {
-          "num": "1.400",
+          "num": "1,400",
           "label": "TEUs via Railway",
           "sublabel": "PER YEAR",
           "icon": "teu"
@@ -1116,17 +1116,17 @@
       "title": "Port of Trieste",
       "data": [
         {
-          "num": "2.300.000<span>sqm</span>",
+          "num": "2,300,000<span>sqm</span>",
           "label": "Port areas",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "1.800.000<span>sqm</span>",
+          "num": "1,800,000<span>sqm</span>",
           "label": "Free port areas",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "925.000<span>sqm</span>",
+          "num": "925,000<span>sqm</span>",
           "label": "Storage areas",
           "sublabel": "",
           "icon": ""
@@ -1153,27 +1153,27 @@
       "title": "Port of Monfalcone",
       "data": [
         {
-          "num": "1.550.000<span>sqm</span>",
+          "num": "1,550,000<span>sqm</span>",
           "label": "Port areas",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "800.000<span>sqm</span>",
+          "num": "800,000<span>sqm</span>",
           "label": "Storage areas",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "80.000<span>sqm</span>",
+          "num": "80,000<span>sqm</span>",
           "label": "Warehouses / Sheds",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "125.000<span>sqm</span>",
+          "num": "125,000<span>sqm</span>",
           "label": "Car Terminal",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "1.910<span>meters</span>",
+          "num": "1,910<span>meters</span>",
           "label": "Quay length",
           "sublabel": "",
           "icon": ""
@@ -1200,7 +1200,7 @@
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "7.000<span>tons</span>",
+          "num": "7,000<span>tons</span>",
           "label": "Maximum ships tonnage",
           "sublabel": "",
           "icon": ""
@@ -1215,7 +1215,7 @@
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "+1.000.000<span>tons</span>",
+          "num": "+1,000,000<span>tons</span>",
           "label": "General goods<br> moved in 2022",
           "sublabel": "",
           "icon": ""
@@ -1232,32 +1232,32 @@
       "title": "Trieste Inland Terminal",
       "data": [
         {
-          "num": "486.000<span>sqm</span>",
+          "num": "486,000<span>sqm</span>",
           "label": "Total Area",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "112.500<span>sqm</span>",
+          "num": "112,500<span>sqm</span>",
           "label": "Covered warehouses",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "28.600<span>Teus</span>",
+          "num": "28,600<span>TEUs</span>",
           "label": "Goods handled",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "6.500",
+          "num": "6,500",
           "label": "Containers stripped/unstripped",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "650.000<span>tons</span>",
+          "num": "650,000<span>tons</span>",
           "label": "Goods handled",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "14.500",
+          "num": "14,500",
           "label": "Vehicles loaded/discharged via train",
           "sublabel": "",
           "icon": ""
@@ -1269,12 +1269,12 @@
       "title": "Cervignano Inland Terminal ",
       "data": [
         {
-          "num": "460.000<span>sqm</span>",
+          "num": "460,000<span>sqm</span>",
           "label": "Integrated system of logistics infrastructures",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "160.000<span>sqm</span>",
+          "num": "160,000<span>sqm</span>",
           "label": "Intermodal terminal",
           "sublabel": "",
           "icon": ""
@@ -1289,7 +1289,7 @@
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "24.000<span>sqm</span>",
+          "num": "24,000<span>sqm</span>",
           "label": "Warehouses, connected with 2 tracks of 550 meters",
           "sublabel": "",
           "icon": ""
@@ -1306,7 +1306,7 @@
       "title": "Gorizia Inland Terminal SDAG",
       "data": [
         {
-          "num": "600.000<span>sqm</span>",
+          "num": "600,000<span>sqm</span>",
           "label": "Total area",
           "sublabel": "",
           "icon": ""
@@ -1316,17 +1316,17 @@
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "6.000<span>sqm</span>",
+          "num": "6,000<span>sqm</span>",
           "label": "Food logistic area",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "20.000<span>sqm</span>",
+          "num": "20,000<span>sqm</span>",
           "label": "Intermodal terminal area",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "30.000<span>sqm</span>",
+          "num": "30,000<span>sqm</span>",
           "label": "Logistic warehouses",
           "sublabel": "",
           "icon": ""
@@ -1343,37 +1343,37 @@
       "title": "Pordenone Inland Terminal",
       "data": [
         {
-          "num": "800.000<span>sqm</span>",
+          "num": "800,000<span>sqm</span>",
           "label": "Total area",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "140.000<span>sqm</span>",
+          "num": "140,000<span>sqm</span>",
           "label": "Intermodal terminal area",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "10.000<span>sqm</span>",
+          "num": "10,000<span>sqm</span>",
           "label": "Park TIR",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "30.000<span>sqm</span>",
+          "num": "30,000<span>sqm</span>",
           "label": "Logistic warehouses",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "3.200<span>sqm</span>",
+          "num": "3,200<span>sqm</span>",
           "label": "Customs offices",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "2.500<span>sqm</span>",
+          "num": "2,500<span>sqm</span>",
           "label": "Civil motorization offices",
           "sublabel": "",
           "icon": ""
         }, {
-          "num": "100.000<span>sqm</span>",
+          "num": "100,000<span>sqm</span>",
           "label": "Transport, shipping and wholesale trade warehouses",
           "sublabel": "",
           "icon": ""

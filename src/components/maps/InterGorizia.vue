@@ -67,22 +67,27 @@ li:nth-child(1) {
 }
 
 li:nth-child(2) {
+
+	left: 74.18%;
+	top: 38.90%;
+	
+}
+
+li:nth-child(3) {
 	left: 10%;
 	top: 60.18%;
 }
 
-li:nth-child(3) {
+li:nth-child(4) {
+
 	left: 13.63%;
 	top: 55.81%;
 }
 
-li:nth-child(4) {
+li:nth-child(5) {
+
 	left: 63.63%;
 	top: 42.72%;
-}
-
-li:nth-child(5) {
-	left: 74.18%;
-	top: 38.90%;
+	
 }
 </style>

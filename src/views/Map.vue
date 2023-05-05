@@ -933,7 +933,7 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   position: fixed;
-  z-index: 10;
+  z-index: 8;
   bottom: .75vw;
   left: 1.5vw;
   transition: all ease 2000ms;

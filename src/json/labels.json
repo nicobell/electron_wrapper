@@ -412,9 +412,9 @@
       "title": "Port of Trieste",
       "stateto": "porto_trieste",
       "color": "#1E85D9",
-      "x": 73,
-      "y": 86.3,
-      "style": "topleft"
+      "x": 68.5,
+      "y": 83,
+      "style": "topright"
     },
     "interporto_freeeste": {
       "title": "Trieste Inland Terminal",

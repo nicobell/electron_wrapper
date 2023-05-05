@@ -6,6 +6,7 @@
 			<li @click="this.updateActiveIndex(2)">Item 3</li>
 			<li @click="this.updateActiveIndex(3)">Item 4</li>
 			<li @click="this.updateActiveIndex(4)">Item 5</li>
+            <li @click="this.updateActiveIndex(5)">Item 6</li>
 		</ul>
 		<img src="../../assets/mappe/pordenone.png" alt="">
 
@@ -68,20 +69,25 @@ li:nth-child(1) {
 
 li:nth-child(2) {
     left: 32.72%;
-    top: 22.09%;
+    top: 22.90%;
 }
 
 li:nth-child(3) {
-    left: 79.99%;
+    left: 80%;
     top: 26.72%;
 }
 
 li:nth-child(4) {
-    left: 29.09%;
-    top: 49.27%;
+    left: 27.09%;
+    top: 50%;
 }
 
 li:nth-child(5) {
+    left: 34.18%;
+    top: 48.18% ;
+}
+
+li:nth-child(6) {
     left: 41.45%;
     top: 35.45%;
 }

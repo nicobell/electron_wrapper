@@ -392,7 +392,7 @@
       "id": "porto_monfalcone",
       "parent": "menu_fvg",
       "title": "Port of Monfalcone",
-      "videosrc": ["monfalcone2", "monfalcone4"],
+      "videosrc": ["monfalcone1", "monfalcone2"],
       "zoom": 45,
       "x": 1500,
       "y": 1300,

@@ -102,6 +102,25 @@ right: 111px;
     height: 1vw;
     border-radius: 50%;
 }
+.legend-bar .tile .symbol.circle-other {
+    width: 1.1vw;
+    height: 1.1vw;
+    border-radius: 50%;
+    position: relative;
+}
+.legend-bar .tile .symbol.circle-other::after {
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: .35vw;
+    height: .35vw;
+    position: absolute;
+    background-color: rgb(134, 160, 172);
+    z-index: 10;
+    border-radius: 50%;
+}
+
 .legend-bar .tile .symbol.logistic-hub {
     width: .8vw;
     height: .8vw;

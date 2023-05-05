@@ -43,13 +43,10 @@
                 <path id="L_9_mask" class="mask linea dashed blue" d="m942.54,513.77l.58.96" />
             </mask>
 
-            <path id="linea_10" class="linea blue" d="m941.79,513.51l.75,1.04-.61.37" />
-
-            <line id="linea_11" class="blue dashed linea" x1="938.21" y1="513.3" x2="939.18" y2="512.33" />
-
-            <line id="linea_12" class="blue dashed linea" x1="941.07" y1="511.32" x2="939.9" y2="512.48" />
-
-            <line id="linea_13" class="blue dashed linea" x1="935.73" y1="511.37" x2="936.97" y2="512.61" />
+            <line  id="linea_10" class="linea blue" x1="938.21" y1="513.3" x2="939.21" y2="512.3" />
+            <line  id="linea_11" class="linea blue" x1="941.07" y1="511.32" x2="939.95" y2="512.43" />
+            <polyline  id="linea_12" class="linea blue" points="942.22 514.5 942.54 514.17 942.26 513.72" />
+            <line  id="linea_13" class="linea blue" x1="935.67" y1="511.31" x2="936.98" y2="512.61" />
         </g>
 
     </svg>

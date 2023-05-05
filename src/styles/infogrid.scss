@@ -162,11 +162,13 @@
     color: var(--main_color);
 }
 
+.info-city:not(.porti) .table-entry .num,
 .info-grid:not(.porti) .table-entry .num { padding-left: 3vw; }
 .table-entry:not(.subgrid) .num { max-width: 45%; }
 
 .table-entry:not(.subgrid) .labels { max-width: 55%; }
 
+.info-city:not(.porti) .table-entry .num:before,
 .info-grid:not(.porti) .table-entry .num:before {
     content: '';
     width: 2.2vw;
@@ -180,6 +182,11 @@
     transform: translateY(-50%);
 }
 
+.info-city:not(.porti) .table-entry .num:before {
+    background-color: #10426b;
+}
+
+.info-city:not(.porti) .table-entry .num:after,
 .info-grid:not(.porti) .table-entry .num:after {
     content: '';
     width: 2.2vw;

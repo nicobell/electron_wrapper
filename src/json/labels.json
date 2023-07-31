@@ -362,7 +362,7 @@
     },
     "istanbul": {
       "title": "Istanbul",
-      "stateto": "",
+      "stateto": "istanbul",
       "color": "#4BDFC6",
       "x": 73.8,
       "y": 46.3,
@@ -370,7 +370,7 @@
     },
     "cesme": {
       "title": "Cesme",
-      "stateto": "",
+      "stateto": "cesme",
       "color": "#4BDFC6",
       "x": 67.8,
       "y": 59,
@@ -378,7 +378,7 @@
     },
     "mersin": {
       "title": "Mersin",
-      "stateto": "",
+      "stateto": "mersin",
       "color": "#4BDFC6",
       "x": 86.7,
       "y": 66.7,
@@ -386,24 +386,24 @@
     },
     "istanbul_global": {
       "title": "Istanbul",
-      "stateto": "",
-      "color": "#4BDFC6",
+      "stateto": "istanbul_global",
+      "color": "#EB503F",
       "x": 53.6,
       "y": 46,
       "style": "left"
     },
     "cesme_global": {
       "title": "Cesme",
-      "stateto": "",
-      "color": "#4BDFC6",
-      "x": 49.8,
+      "stateto": "cesme_global",
+      "color": "#EB503F",
+      "x": 48.8,
       "y": 55.1,
       "style": "topright"
     },
     "mersin_global": {
       "title": "Mersin",
-      "stateto": "",
-      "color": "#4BDFC6",
+      "stateto": "mersin_global",
+      "color": "#EB503F", 
       "x": 56,
       "y": 49.6,
       "style": "left"
@@ -566,15 +566,15 @@
     },
     "xingang": {
       "title": "Xin'gang",
-      "stateto": "",
+      "stateto": "xingang",
       "color": "#EB503F",
-      "x": 76,
+      "x": 75,
       "y": 47.7,
       "style": "right"
     },
     "dalian": {
       "title": "Dalian",
-      "stateto": "",
+      "stateto": "dalian",
       "color": "#EB503F",
       "x": 80.5,
       "y": 47.4,
@@ -582,7 +582,7 @@
     },
     "busan": {
       "title": "Busan",
-      "stateto": "",
+      "stateto": "busan",
       "color": "#EB503F",
       "x": 83.6,
       "y": 50.7,
@@ -590,23 +590,23 @@
     },
     "ningbo": {
       "title": "Ningbo",
-      "stateto": "",
+      "stateto": "ningbo",
       "color": "#EB503F",
-      "x": 76.7,
+      "x": 76,
       "y": 54.2,
       "style": "right"
     },
     "shekou": {
       "title": "Shekou",
-      "stateto": "",
+      "stateto": "shekou",
       "color": "#EB503F",
-      "x": 75,
+      "x": 74,
       "y": 57.5,
       "style": "right"
     },
     "shanghai": {
       "title": "Shanghai",
-      "stateto": "",
+      "stateto": "shanghai",
       "color": "#EB503F",
       "x": 80.9,
       "y": 59.7,
@@ -614,7 +614,7 @@
     },
     "singapore": {
       "title": "Singapore",
-      "stateto": "",
+      "stateto": "singapore",
       "color": "#EB503F",
       "x": 75.2,
       "y": 75.8,
@@ -622,7 +622,7 @@
     },
     "kingabdullah": {
       "title": "King Abdullah",
-      "stateto": "",
+      "stateto": "kingabdullah",
       "color": "#EB503F",
       "x": 56,
       "y": 56.4,
@@ -630,7 +630,7 @@
     },
     "salalah": {
       "title": "Salalah",
-      "stateto": "",
+      "stateto": "salalah",
       "color": "#EB503F",
       "x": 60.8,
       "y": 60.6,
@@ -638,7 +638,7 @@
     },
     "marsaxlokk": {
       "title": "Marsaxlokk",
-      "stateto": "",
+      "stateto": "marsaxlokk",
       "color": "#EB503F",
       "x": 50,
       "y": 75,
@@ -646,7 +646,7 @@
     },
     "portsaid": {
       "title": "Port Said",
-      "stateto": "",
+      "stateto": "portsaid",
       "color": "#EB503F",
       "x": 50,
       "y": 80,
@@ -654,17 +654,17 @@
     },
     "jeddah": {
       "title": "Jeddah",
-      "stateto": "",
+      "stateto": "jeddah",
       "color": "#EB503F",
-      "x": 53.3,
+      "x": 52.3,
       "y": 64.5,
       "style": "topright"
     },
     "portklang": {
       "title": "Port Klang",
-      "stateto": "",
+      "stateto": "portklang",
       "color": "#EB503F",
-      "x": 70.2,
+      "x": 69.2,
       "y": 67.5,
       "style": "right"
     },

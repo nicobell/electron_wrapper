@@ -41,13 +41,21 @@
     </div>
 
     <!-- //////////////////// SECONDARY TABLE INFO //////////////////// -->
-    <div ref="infocity" class="info-city">
+    <div ref="infocity" :class="['info-city', this.currentState.parent=='menu_global' ? 'global-grid': '']">
       <h2>{{ this.getTable(this.currentFocus).title }}</h2>
       <div class="grid">
         <div v-for="(entry, index) in this.getTable(this.currentFocus).data" :key="'table_data_' + index" 
-          :class="['table-entry', entry.subdata ? 'subgrid' : '']">
+          :class="['table-entry', entry.subdata ? 'subgrid' : '', this.currentState.parent=='menu_global' ? 'global-table': '']">
 
           <div :class="['num', entry.icon]">{{ entry.num }}</div>
+
+          <div v-if="this.currentState.parent=='menu_global'" class="import-num">{{ entry.import_num }}</div>
+          <div v-if="this.currentState.parent=='menu_global'" class="labels">
+            <span class="label">{{ entry.label_import }}</span>
+            <span v-if="entry.sublabel" class="small-label">{{ entry.sublabel_import }}</span>
+          </div>
+          <div v-if="this.currentState.parent=='menu_global'" class="export-num">{{ entry.export_num }}</div>
+
           <div class="labels">
             <span class="label">{{ entry.label }}</span>
             <span v-if="entry.sublabel" class="small-label">{{ entry.sublabel }}</span>
@@ -129,7 +137,7 @@
             this.getLabel(label).stateto ? 'white-arrow' : null, 
             this.getLabel(label).style, 
             this.labelOpacity(label) ? 'transparent' : '',
-            this.getLabel(label).title == this.getTable(this.currentState.focus.table).title ? 'blue' : ''
+            this.coloredLabel(label)
           ]"
           @click="this.getLabel(label).stateto ? this.zoomToState(this.getLabel(label).stateto) : null"
         >
@@ -491,6 +499,19 @@ export default {
     }
   },
   methods: {
+    coloredLabel(label) {
+      if(this.getLabel(label).title == this.getTable(this.currentState.focus.table).title) {
+        if(this.currentState.parent == 'menu_global')
+          return 'blue red'
+        
+        if(this.currentState.parent == 'roro_connections')
+          return 'blue roro'
+          
+        return 'blue'
+      }
+
+      return ''
+    },
     manageCountryClick(id) {
       this.zoomToState(id)
     },
@@ -515,12 +536,13 @@ export default {
         this.enableButtons = false
         
         //disabilito le LABELS solo se mi sposto tra stati che non mantengono la stessa "vista", cioè
-        //--> SE vado in una città all'interno di uno stato, 
-        //--> SE torno da una città al suo country padre
-        //--> SE vado da un porto all'altro nella sezione FVG
-        if(nextstate.focus.city 
-          || (nextstate.focus.country && (id == this.currentState.parent)) 
-          || (nextstate.parent == this.currentState.parent && nextstate.parent == 'menu_fvg') 
+        if(nextstate.focus.city                                                                        //--> SE vado in una città all'interno di uno stato, 
+          || (nextstate.focus.country && (id == this.currentState.parent))                             //--> SE torno da una città al suo country padre
+          || (nextstate.parent == this.currentState.parent && nextstate.parent == 'menu_fvg')          //--> SE vado da un porto all'altro nella sezione FVG
+          || (nextstate.parent == this.currentState.parent && nextstate.parent == 'menu_global')       //--> SE vado da una città all'altra nella sezione Global
+          || (nextstate.parent == this.currentState.parent && nextstate.parent == 'roro_connections')  //--> SE vado da una città all'altra nella sezione RoRo
+          || (nextstate.id == 'menu_global' && (id == this.currentState.parent))                       //--> SE torno da una città global al suo country padre
+          || (nextstate.id == 'roro_connections' && (id == this.currentState.parent))                  //--> SE torno da una città global al suo country padre
         )
           this.showLabels = true
         else
@@ -553,11 +575,17 @@ export default {
           (id==this.getState(this.prevId).parent && nextstate.focus.country && this.getState(this.prevId).focus.city)               //...da city a country padre
           || (nextstate.parent==this.getState(this.prevId).id && nextstate.focus.city && this.getState(this.prevId).focus.country)  //...da country a city figlia
           || (nextstate.focus.city && this.getState(this.prevId).focus.city && nextstate.parent==this.getState(this.prevId).parent) //...da city a city nello stesso country padre
+          
+          || (id==this.getState(this.prevId).parent && nextstate.id=='menu_global' && this.getState(this.prevId).focus.city)        //...da city global a global state
+          || (nextstate.parent==this.getState(this.prevId).id && nextstate.focus.city && this.getState(this.prevId).id == 'menu_global')   //...da uno stato menu a city figlia
+
+          || (id==this.getState(this.prevId).parent && nextstate.id=='roro_connections' && this.getState(this.prevId).focus.city)   //...da city roro a roro state
+          || (nextstate.parent==this.getState(this.prevId).id && nextstate.focus.city && this.getState(this.prevId).id == 'roro_connections')   //...da roro state a city figlia
         )
           this.customduration =  0
         else 
           this.customduration = this.duration
-
+        
         //ritardo nel cambio delle tabelle per permettere l'animazione di uscita
         setTimeout(() => { this.currentTable = nextstate.table }, 1000);
         setTimeout(() => { this.currentFocus = nextstate.focus.table }, 800);

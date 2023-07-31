@@ -1033,6 +1033,459 @@
         "city": "dunajskastreda",
         "table": "dunajskastreda"
       }
+    },
+    {
+      "id": "cesme_global",
+      "parent": "menu_global",
+      "title": "Cesme",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "cesme_global",
+        "table": "cesme_global"
+      }
+    },
+    {
+      "id": "istanbul_global",
+      "parent": "menu_global",
+      "title": "Istanbul",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "istanbul_global",
+        "table": "istanbul_global"
+      }
+    },{
+      "id": "mersin_global",
+      "parent": "menu_global",
+      "title": "Mesin",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "mersin_global",
+        "table": "mersin_global"
+      }
+    },
+    {
+      "id": "xingang",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "xingang",
+        "table": "xingang"
+      }
+    },
+    {
+      "id": "dalian",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "dalian",
+        "table": "dalian"
+      }
+    },
+    {
+      "id": "busan",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "busan",
+        "table": "busan"
+      }
+    },
+    {
+      "id": "ningbo",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "ningbo",
+        "table": "ningbo"
+      }
+    },
+    {
+      "id": "shekou",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "shekou",
+        "table": "shekou"
+      }
+    },
+    {
+      "id": "shanghai",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "shanghai",
+        "table": "shanghai"
+      }
+    },
+    {
+      "id": "singapore",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "singapore",
+        "table": "singapore"
+      }
+    },
+    {
+      "id": "kingabdullah",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "kingabdullah",
+        "table": "kingabdullah"
+      }
+    },
+    {
+      "id": "salalah",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "salalah",
+        "table": "salalah"
+      }
+    },
+    {
+      "id": "marsaxlokk",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "marsaxlokk",
+        "table": "marsaxlokk"
+      }
+    },
+    {
+      "id": "portsaid",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "portsaid",
+        "table": "portsaid"
+      }
+    },
+    {
+      "id": "jeddah",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "jeddah",
+        "table": "jeddah"
+      }
+    },
+    {
+      "id": "portklang",
+      "parent": "menu_global",
+      "title": "Xin'gang",
+      "zoom": 1,
+      "x": 0,
+      "y": 0,
+      "type": "zoom-global",
+      "highlights": [
+        "fvg_blue", "prt", "esp", "irl", "fra", "ita", "deu", "dnk", "hrv", "svk", "aut",
+        "svn", "pol", "est", "lva", "ltu", "swe", "fin", "hun", "bgr", "grc", "cze", "lux",
+        "hol"
+      ],
+      "lines": ["fvg_blue", "big_red_line", "small_eu_white_line"],
+      "labels": [
+        "xingang", "dalian", "busan", "ningbo", "shanghai", "shekou", "singapore", 
+        "kingabdullah", "salalah", "jeddah", "portklang", "istanbul_global", "cesme_global", "mersin_global"
+      ],
+      "table": "global",
+      "focus": {
+        "country": "",
+        "city": "portklang",
+        "table": "portklang"
+      }
+    },
+    {
+      "id": "istanbul",
+      "parent": "roro_connections",
+      "title": "Istanbul",
+      "zoom": 7,
+      "x": -20,
+      "y": -50,
+      "type": "zoom-country",
+      "highlights": [],
+      "lines": ["fvg_blue", "roro_connections_line"],
+      "labels": ["istanbul", "cesme", "mersin"],
+      "table": "mediterranean",
+      "focus": {
+        "country": "",
+        "city": "istanbul",
+        "table": "istanbul"
+      }
+    },
+    {
+      "id": "cesme",
+      "parent": "roro_connections",
+      "title": "Cesme",
+      "zoom": 7,
+      "x": -20,
+      "y": -50,
+      "type": "zoom-country",
+      "highlights": [],
+      "lines": ["fvg_blue", "roro_connections_line"],
+      "labels": ["istanbul", "cesme", "mersin"],
+      "table": "mediterranean",
+      "focus": {
+        "country": "",
+        "city": "cesme",
+        "table": "cesme"
+      }
+    },
+    {
+      "id": "mersin",
+      "parent": "roro_connections",
+      "title": "Mersin",
+      "zoom": 7,
+      "x": -20,
+      "y": -50,
+      "type": "zoom-country",
+      "highlights": [],
+      "lines": ["fvg_blue", "roro_connections_line"],
+      "labels": ["istanbul", "cesme", "mersin"],
+      "table": "mediterranean",
+      "focus": {
+        "country": "",
+        "city": "mersin",
+        "table": "mersin"
+      }
     }
   ]
 }

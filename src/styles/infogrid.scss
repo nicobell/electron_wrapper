@@ -96,6 +96,10 @@
     padding: 0;
 }
 
+.table-entry.global-table {
+    justify-content: flex-start;
+}
+
 .table-entry.subgrid {
     display: grid;
     grid-template-areas: 
@@ -120,6 +124,8 @@
     flex-direction: column;
     margin-left: auto;
 }
+.table-entry.global-table .labels { margin-left: 0; }
+
 
 .table-entry .label {
     color: #ededed;
@@ -144,6 +150,8 @@
 }
 
 /* -------------------------------------------------------- */
+.table-entry.global-table .import-num,
+.table-entry.global-table .export-num,
 .table-entry .num {
     color: #fff;
     font-size: 1.8vw;
@@ -153,6 +161,25 @@
 }
 
 .info-grid.fvg .table-entry .num { font-size: 2.2vw; }
+
+.table-entry.global-table .import-num { 
+    margin: 0 0 0 auto; 
+    padding: 0 .5vw;
+    min-width: 44px;
+    text-align: center;
+}
+.table-entry.global-table .export-num {
+    padding: 0 .5vw;
+    margin: 0 0 0 .5vw;
+    border-left: 1px solid #c7c7c7;
+    min-width: 44px;
+    text-align: center;
+}
+
+.table-entry.global-table .num {
+    font-weight: 600;
+    font-size: 1.25vw;
+}
 
 .table-entry .num span {
     position: absolute;
@@ -244,7 +271,8 @@
 .info-city {
     position: fixed;
     z-index: 10;
-    bottom: 1vw;
+    /* bottom: 1vw; */
+    bottom: 0vw;
     left: 0;
     padding: 2vw 2vw 1vw 2vw;
     background: var(--secondary_blue);
@@ -254,16 +282,26 @@
     transition: transform ease 800ms;
 }
 
+.info-city.global-grid {
+    z-index: 12;
+    bottom: 0vw;
+    width: 28vw;
+    padding: 1.25vw 2vw;
+}
+
 .info-city.show {
     transform: translateX(0);
     transition: transform ease 800ms;
 }
 
 .info-city h2 {
-    margin: 0;
-    font-size: 2.8vw;
+    margin: 0 0 .5vw 0;
+    font-size: 2.5vw;
     font-weight: 700;
     color: #fff;
+    padding-bottom: 0.8vw;
+    line-height: 1em;
+    border-bottom: 1px solid #c7c7c7;
 }
 
 .info-city .small-label { color: #c7c7c7; }

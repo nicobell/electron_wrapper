@@ -23,6 +23,17 @@
     background-color: var(--main_color); 
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
     transition: transform 500ms ease;
+    z-index: 9;
+}
+
+.labels div.blue.red::before,
+.labels div.blue.red {
+    background-color: #EB503F;
+}
+
+.labels div.blue.roro::before,
+.labels div.blue.roro {
+    background-color: #4BDFC6;
 }
 
 .labels div.topleft.blue,
